@@ -1,0 +1,108 @@
+<main ng-controller="ExpensesCtrl">
+        <div class="row">
+            <nav id="stickybar" class="col-xl-3 col-md-3" data-simplebar data-simplebar-auto-hide="true">
+                <ul>
+                    <li class="active"><a href="#!expenses/#How_do_I_add_an_Expense_Category">How do I add an Expense Category?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_add_a_Payment_Mode">How do I add a Payment Mode?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_add_an_Expense">How do I add an Expense?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_submit_an_Expense_for_approval">How do I submit an Expense for approval?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_export_an_Expense">How do I export an Expense?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_clone_an_Expense">How do I clone an Expense?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_approve_reject_Employee_Expenses">How do I approve/reject Employee Expenses?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_forward_an_Expense_to_another_Manager">How do I forward an Expense to another Manager?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_upload_Receipts">How do I upload Receipts?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_download_my_Receipts">How do I download my Receipts?</a></li>
+                    <li class=""><a href="#!expenses/#What_are_Unreported_Receipts">What are Unreported Receipts?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_add_Receipts_to_Expenses_Trips">How do I add Receipts to Expenses/Trips?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_delete_a_Receipt">How do I delete a Receipt?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_create_a_Trip">How do I create a Trip?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_allot_an_Advance_to_an_Employee">How do I allot an Advance to an Employee?</a></li>
+                    <li class=""><a href="#!expenses/#How_do_I_view_the_Advance_allotted_to_me">How do I view the Advance allotted to me?</a></li>
+                </ul>
+            </nav>
+            <div id="main" class="col-xl-9 col-md-9">
+                <div class="overview">
+                    <p>Expenses allows you to manage your expenses, trip budgets, advances and receipts. You can create and send your expenses for approval to your Reporting Manager. Expenses can be placed into various categories such as food, travel, entertainment etc.</p>
+                    <p><img src="assets/images/expenses/01.jpg" alt="" class="img-fluid"></p>
+                    <p><strong>Process Description:</strong></p>
+                    <ul>
+                        <li>
+                            User (Any user with a reporting manager) can add a new Trip
+                            <ul>
+                                <li>User can submit the Trip for approval</li>
+                                <li>User can export the trip as an expense</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Advances
+                            <ul>
+                                <li>User can check the advances allotted to him/her</li>
+                                <li>User can allot advances to employees reporting to him/her</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Receipts
+                            <ul>
+                                <li>User can add/upload receipts</li>
+                                <li>User can attach receipts to expenses</li>
+                                <li>User can download existing receipts</li>
+                            </ul>
+                        </li>
+                        <li>
+                            User can add expenses
+                            <ul>
+                                <li>User will need to enter expense details</li>
+                                <li>User can select an advance amount/add the expense to a trip/upload receipts (optional)</li>
+                                <li>User can then submit his/her expense</li>
+                                <li>
+                                    The user’s reporting manager receives the user’s expense request, he/she can:
+                                    <ul>
+                                        <li>Approve the expense</li>
+                                        <li>Reject the expense</li>
+                                        <li>Forward the expense to another manager who can perform the actions on his/her behalf. (The other manager also has the same options i.e Approve/Reject/Forward)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Note: There is no limit on how many times an expense can be forwarded.</p>
+
+                    <div id="How_do_I_add_an_Expense_Category">
+                        <h2>How do I add an Expense Category?</h2>
+                        <p><img src="assets/images/expenses/02.jpg" alt="" class="img-fluid"></p>
+                        <ol class="alpha">
+                            <li>Click <strong>Expenses</strong> in the top menu</li>
+                            <p><img src="assets/images/expenses/03.jpg" alt="" class="img-fluid m-0"></p>
+                            <li>Click <strong>Category</strong> on the left menu panel</li>
+                            <li>Click <strong>+Add</strong> button on the right side</li>
+                            <p><img src="assets/images/expenses/04.jpg" alt="" class="img-fluid m-0"></p>
+                            <li>Click <strong>+Add</strong> on the top right corner</li>
+                            <li>Select <strong>Category</strong></li>
+                            <p><img src="assets/images/expenses/05.jpg" alt="" class="img-fluid m-0"></p>
+                            <li>Enter Category name</li>
+                            <li>Click <strong>SAVE</strong> button</li>
+                        </ol>
+                    </div>
+
+                    <div id="How_do_I_add_a_Payment_Mode">
+                        <h2>How do I add a Payment Mode?</h2>
+                        <p>The method of payment for example: credit card, net banking, cash etc.</p>
+                        <p><img src="assets/images/expenses/06.jpg" alt="" class="img-fluid"></p>
+                        <ol class="alpha">
+                            <li>Click <strong>Expenses</strong> in the top menu</li>
+                            <p><img src="assets/images/expenses/07.jpg" alt="" class="img-fluid m-0"></p>
+                            <li>Click <strong>Payment Mode</strong> on the left menu panel</li>
+                            <li>Click <strong>+Add</strong> button on the right side</li>
+                            <p><img src="assets/images/expenses/08.jpg" alt="" class="img-fluid m-0"></p>
+                            <li>Click <strong>+Add</strong> on the top right corner</li>
+                            <li>Select <strong>Payment Mode</strong></li>
+                            <p><img src="assets/images/expenses/09.jpg" alt="" class="img-fluid m-0"></p>
+                            <li>Enter Payment Mode name</li>
+                            <li>Click <strong>SAVE</strong> button</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
