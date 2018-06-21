@@ -89,9 +89,9 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl : "pages/time.html",
         controller: "TimeCtrl"
     })
-    .when("/additional-feature", {
-        templateUrl : "pages/additional-feature.html",
-        controller: "AdditinalFeatureCtrl"
+    .when("/additional-features", {
+        templateUrl : "pages/additional-features.html",
+        controller: "AdditionalFeaturesCtrl"
     })
     //route for the 404 page
     /*.otherwise({
@@ -235,8 +235,8 @@ app.controller("TimeCtrl", function ($scope) {
     };  
 });
 
-app.controller("AdditinalFeatureCtrl", function ($scope) {
+app.controller("AdditionalFeaturesCtrl", function ($scope) {
     $scope.$parent.seo = {
-        pageTitle: 'Additional Feature | Sentrifugo - User Guide'
+        pageTitle: 'Additional Features | Sentrifugo - User Guide'
     };  
 });
