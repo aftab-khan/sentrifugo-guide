@@ -1,333 +1,362 @@
 <main ng-controller="LeaveManagementCtrl">
     <div class="row">
-            <nav id="stickybar" class="col-xl-3 col-md-3" data-simplebar data-simplebar-auto-hide="true">
-                <ul class="sidebar-menu">
-                    <li class=""><a href="#!/leave-management#How_do_I_configure_Leave_Management_Settings">How do I configure Leave Management Settings?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_create_Leave_Types">How do I create Leave Types?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_allocate_Leave_to_Employees">How do I allocate Leave to Employees?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_deduct_Leaves_from_an_Employee">How do I deduct Leaves from an Employee?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_create_HR_Email_Group_for_Leave_Management">How do I create HR Email Group for Leave Management?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_raise_a_Leave_Request">How do I raise a Leave Request?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_cancel_a_Leave_Request">How do I cancel a Leave Request?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_Approve_Reject_an_Employees_Leave_Request">How do I Approve/Reject an Employee’s Leave Request?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_view_the_Approved_Leaves_and_Leave_Requests_of_all_the_Employees_Reporting_to_Me">How do I view the Approved Leaves and Leave Requests of all the Employees Reporting to Me?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_view_my_own_Leave_s_Leave_Request_s">How do I view my own Leave(s)/Leave Request(s)?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_create_Holiday_Groups">How do I create Holiday Groups?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_create_Holidays">How do I create Holidays?</a></li>
-                    <li class=""><a href="#!/leave-management#How_do_I_assign_Holidays_to_Employees">How do I assign Holidays to Employees?</a></li>
+        <nav id="stickybar" class="col-xl-3 col-md-3" data-simplebar data-simplebar-auto-hide="true">
+            <ul class="sidebar-menu">
+                <li class=""><a href="#!/leave-management#How_do_I_configure_Leave_Management_Settings">How do I configure Leave Management Settings?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_create_Leave_Types">How do I create Leave Types?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_allocate_Leave_to_Employees">How do I allocate Leave to Employees?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_deduct_Leaves_from_an_Employee">How do I deduct Leaves from an Employee?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_create_HR_Email_Group_for_Leave_Management">How do I create HR Email Group for Leave Management?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_raise_a_Leave_Request">How do I raise a Leave Request?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_cancel_a_Leave_Request">How do I cancel a Leave Request?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_Approve_Reject_an_Employees_Leave_Request">How do I Approve/Reject an Employee’s Leave Request?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_view_the_Approved_Leaves_and_Leave_Requests_of_all_the_Employees_Reporting_to_Me">How do I view the Approved Leaves and Leave Requests of all the Employees Reporting to Me?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_view_my_own_Leave_s_Leave_Request_s">How do I view my own Leave(s)/Leave Request(s)?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_create_Holiday_Groups">How do I create Holiday Groups?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_create_Holidays">How do I create Holidays?</a></li>
+                <li class=""><a href="#!/leave-management#How_do_I_assign_Holidays_to_Employees">How do I assign Holidays to Employees?</a></li>
+            </ul>
+        </nav>
+
+        <div id="main" class="col-xl-9 col-md-9">
+            <div class="overview">
+                <p>One of the main features available in Self Service is Leave Management. You can raise leave requests and have them approved by your Reporting Manager/HR. Below is the leave management process flowchart.</p>
+                <p><img src="assets/images/leave_management/01.jpg" alt="" class="img-fluid"></p>
+                <p><strong>Process Description:</strong></p>
+                <ul>
+                    <li>A User (Any User who has a reporting manager) raises a leave request.</li>
+                    <li>The User can cancel his leave request unapproved or approved (one day before the leave date.</li>
+                    <li>Either the Reporting Manager or HR can approve/reject/cancel (at any time) the leave request.</li>
                 </ul>
-            </nav>
-
-            <div id="main" class="col-xl-9 col-md-9">
-                <div class="overview">
-                    <p>One of the main features available in Self Service is Leave Management. You can raise leave requests and have them approved by your Reporting Manager/HR. Below is the leave management process flowchart.</p>
-                    <p><img src="assets/images/leave_management/01.jpg" alt="" class="img-fluid"></p>
-                    <p><strong>Process Description:</strong></p>
-                    <ul>
-                        <li>A User (Any User who has a reporting manager) raises a leave request.</li>                        
-                        <li>The User can cancel his leave request unapproved or approved (one day before the leave date.</li>                        
-                        <li>Either the Reporting Manager or HR can approve/reject/cancel (at any time) the leave request.</li>
-                    </ul>
-                    <div class="media p-2 col-10 offset-1">
-                        <img src="assets/images/notpad.jpg" alt="" class="mr-3">
-                        <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
-                            After an approved leave request has been cancelled, the leave(s) are credited back to the user’s leave balance.
-                        </p>
-                    </div>
-                </div>
-
-                <div id="How_do_I_configure_Leave_Management_Settings">
-                    <h2>How do I configure Leave Management Settings?</h2>
-                    <p><strong>Leave Management Options</strong></p>
-                    <p><img src="assets/images/leave_management/02.jpg" alt="" class="img-fluid"></p>
-                    <p>To configure leave management options:</p>
-                    <ol class="alpha">
-                        <li>Click <strong>HR</strong> in the top menu</li>
-                        <li>Click <strong>Leave Management</strong> in the left panel</li>
-                        <li>Click <strong>Leave Management Options </strong> in the submenu</li>
-                        <li>Click <strong>+Add button </strong> in the right side</li>
-                        <p><img src="assets/images/leave_management/03.jpg" alt="" class="img-fluid"></p>
-                        <li>Fill in the required details</li>
-                        <li><strong>Allow Leave Transfers: </strong> If there are any unused leaves for an employee in the current year, then by using this option they will be carried forward to the next year</li>
-                        <li><strong>Skip Holidays: </strong>  If a user applies for a vacation which includes any pre-declared holiday, then by using this option, holiday will be excluded from the vacation days</li>
-                        <li>Click <strong>SAVE</strong> button</li>
-                    </ol>
-
-                    <div class="media p-2 col-10 offset-1">
-                        <img src="assets/images/hint_bulb.jpg" alt="" class="mr-3">
-                        <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
-                                If each business unit in your organization has different working days and hours, then using this option you can configure the settings.
-                        </p>
-                    </div>
-                </div>                    
-
-                <div id="How_do_I_create_Leave_Types">
-                    <h2>How do I create Leave Types?</h2>
-                    <p><img src="assets/images/leave_management/04.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>HR</strong> in the top menu</li>
-                        <li>Click <strong>Employee Configuration</strong> on the left menu panel</li>
-                        <li>Click <strong>Leave Types</strong> in the submenu</li>
-                        <li>Click <strong>+Add</strong> button on the right side</li>
-                        <p><img src="assets/images/leave_management/05.jpg" alt="" class="img-fluid"></p>
-                        <li>Fill in the required details</li>
-                        <li>Click <strong>SAVE</strong> button to create a new leave type</li>
-                    </ol>
-                    <div class="media p-2 col-10 offset-1">
-                        <img src="assets/images/notpad.jpg" alt="" class="mr-3">
-                        <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
-                            The number of days assigned to a Leave Type denotes the maximum number of days a User can apply for a leave at one go. It’s not the total leave balance for a leave type.
-                        </p>
-                    </div>
-                </div>
-
-                <div id="How_do_I_allocate_Leave_to_Employees">
-                    <h2>How do I allocate Leave to Employees?</h2>
-                    <p>There are two ways to allocate leaves to employees:</p>
-                    <ol class="decimal">
-                        <li>Multiple employees at once (according to Business Units and Departments)</li>
-                        <li>One employee at a time</li>
-                    </ol>
-                    <p class="text-underline">
-                        Multiple employees at once (according to Business Units and Departments)
+                <div class="media p-2 col-10 offset-1">
+                    <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                        After an approved leave request has been cancelled, the leave(s) are credited back to the user’s leave balance.
                     </p>
-                    <p><img src="assets/images/leave_management/06.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>HR</strong> in the top menu</li>
-                        <li>Click <strong>Leave Management</strong> on the left side panel</li>
-                        <li>Click <strong>Add Employee Leave</strong> in the submenu</li>
-                        <li>Click <strong>+Add button</strong> on the right side</li>
-                        <p><img src="assets/images/leave_management/07.jpg" alt="" class="img-fluid"></p>
-                        <li>Select the Business Unit(s)</li>
-                        <li>Select the Department(s)</li>
-                        <p>All the employees in the selected Business Unit(s) and Department(s) will be displayed.</p>
-                        <p><img src="assets/images/leave_management/08.jpg" alt="" class="img-fluid"></p>
-                        <li>Click <strong>Edit</strong> icon</li>
-                        <li>Enter the number of leaves for each employee</li>
-                        <li>Click <strong>SAVE</strong> button</li>
-                    </ol>
-                    <p class="text-underline">
-                        One employee at a time
-                    </p>
-                    <p><img src="assets/images/leave_management/09.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>HR</strong> in the top menu</li>
-                        <li>Click <strong>More Actions</strong> icon</li>
-                        <li>Click <strong>Edit</strong> icon</li>
-                        <p><img src="assets/images/leave_management/10.jpg" alt="" class="img-fluid"></p>
-                        <li>Click <strong>Leaves</strong> on the left menu panel (left side of the form)</li>
-                        <li>Enter the number of days for this employee</li>
-                        <li>Click <strong>SAVE</strong> button</li>
-                    </ol>
-                    <div class="media p-2 col-10 offset-1">
-                        <img src="assets/images/notpad.jpg" alt="" class="mr-3">
-                        <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
-                            You can allocate leaves to employees only for the current year.
-                        </p>
-                    </div>
-                </div>
-                
-                <div id="How_do_I_deduct_Leaves_from_an_Employee">
-                    <h2>How do I deduct Leaves from an Employee?</h2>
-                    <p><img src="assets/images/leave_management/11.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>HR</strong> in the top menu</li>
-                        <li>Click <strong>More Actions</strong> icon</li>
-                        <li>Click <strong>Edit</strong> icon</li>
-                        <p><img src="assets/images/leave_management/12.jpg" alt="" class="img-fluid"></p>                            
-                        <li>Click <strong>Leaves </strong> on the left menu panel (on the left side of the form)</li>
-                        <li>Enter the number of days with a <em>'-' sign preceding the number</em> for the employee</li>                            
-                        <li>Click <strong>SAVE</strong> button</li>
-                    </ol>
-                    <div class="media p-2 col-10 offset-1">
-                        <img src="assets/images/hint_bulb.jpg" alt="" class="mr-3">
-                        <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
-                                You can add/remove leaves for an employee, whenever required. (Only for the current year).
-                        </p>
-                    </div>
-                </div>
-
-                <div id="#How_do_I_create_HR_Email_Group_for_Leave_Management">
-                    <h2>How do I create HR Email Group for Leave Management?</h2>
-                    <p>Employees and their reporting managers are informed through email notifications about any action (leave request raised, leave request approved etc.) taken during the leave cycle. In order to send email notifications to HR also, you will need to configure an HR email group. If an HR group email is not configured, the following message will be displayed:</p>
-                    <p class="text-center"><img src="assets/images/leave_management/mail_msg_01.jpg" alt=""></p>                        
-                    <p><img src="assets/images/leave_management/13.jpg" alt="" class="img-fluid"></p>    
-                    <ol class="alpha">
-                        <li>Click Site Config on the top menu</li>
-                        <li>Click General on the left menu panel</li>
-                        <li>Click Email Contacts in the submenu</li>
-                        <li>Click +Add button</li>
-                        <p><img src="assets/images/leave_management/14.jpg" alt="" class="img-fluid"></p>    
-                        <li>Select the Business Unit</li>
-                        <li>Select Leave Management Group</li>
-                        <li>Enter group email id</li>
-                        <li>Click SAVE button</li>
-                    </ol>
-                    <div class="media p-2 col-10 offset-1">
-                        <img src="assets/images/notpad.jpg" alt="" class="mr-3">
-                        <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
-                                Every HR email must be unique for a Business Unit. If repeated, you will get an error message:
-                                <img src="assets/images/leave_management/mail_msg_02.jpg" alt="" class="d-inline">
-                        </p>
-                    </div>
-                </div>
-                <div id="#How_do_I_raise_a_Leave_Request">
-                    <h2>How do I raise a Leave Request?</h2>
-                    <p>Before raising a leave request, ensure that you have been allotted leaves for the current year. If you have not been allotted leave an information message will be displayed:</p>
-                    <p><img src="assets/images/leave_management/mail_msg_03.jpg" alt=""></p>
-                    <p class="text-underline">
-                        To raise a leave request:
-                    </p>
-                    <p><img src="assets/images/leave_management/15.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>Self Service</strong> in the top menu</li>
-                        <li>Click <strong>Leave Request</strong> in the submenu</li>
-                        <li>The current month calendar will be displayed on the right side panel</li>
-                        <li>Click on previous and next arrow buttons to move to previous or next month</li>
-                        <li>Click <strong>Apply Leave</strong> to apply leave for the current day</li>
-                        <li>Click on any date on the calendar plugin to apply for a day’s leave</li>
-                        <li>Click and drag on the dates to apply for a long leave (multiple days)</li>
-                        <p>After <strong>e/f/g</strong> a small window <strong>‘Create: Leave Request’</strong> will open.</p>
-                        <p><img src="assets/images/leave_management/16.jpg" alt="" class="img-fluid"></p>
-                        <li>Enter the required details</li>
-                        <li>Click <strong>Apply</strong> button</li>
-                    </ol>
-                    <p>Leave requests will be displayed in 'Pending Leaves' until an action is performed by the reporting manager</p>                        
-                    <p><img src="assets/images/leave_management/17.jpg" alt="" class="img-fluid"></p>
-                </div>
-
-                <div id="#How_do_I_cancel_a_Leave_Request">
-                    <h2>How do I cancel a Leave Request?</h2>
-                    <p>Employees can cancel an unapproved leave request at any time. Once a leave request has been approved, they can cancel it only <strong>ONE DAY BEFORE</strong> the actual leave date. Managers can cancel approved leaves at any time</p>
-                    <p class="text-underline">Employee</p>
-                    <p><img src="assets/images/leave_management/18.jpg" alt="" class="img-fluid"></p>
-
-                    <ol class="alpha">
-                        <li>Click <strong>Self Service</strong> in the top menu bar</li>
-                        <li>Click <strong>My Leave</strong> in the submenu</li>
-                        <li>Click <strong>Cancel</strong> icon in the Action column</li>
-                        <p>A confirmation message will be displayed</p>
-                        <p class="text-center"><img src="assets/images/leave_management/19.jpg" alt="" class="d-inline"></p>
-                        <li>Click <strong>Yes</strong> button to cancel the leave</li>
-                    </ol>
-                    <p>You can view your cancelled leaves in <strong>Self Service > Leaves > My Leaves > Cancelled Leaves</strong></p>
-                    <p class="text-underline">Manager</p>
-                    <p><img src="assets/images/leave_management/20.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>Self Service</strong> in the top menu bar</li>
-                        <li>Click <strong>Employee Leave</strong> on the left side panel</li>
-                        <li>Click <strong>More Action</strong> button in the Action</li>
-                        <p>A small pop up window will open:</p>
-                        <p><img src="assets/images/leave_management/21.jpg" alt="" class="img-fluid"></p>
-                        <li>Select <strong>Cancel</strong></li>
-                        <li>Click <strong>SAVE</strong> button</li>
-                    </ol>
-                </div>
-
-                <div id="How_do_I_Approve_Reject_an_Employees_Leave_Request">
-                    <h2>How do I Approve/Reject an Employee’s Leave Request?</h2>
-                    <p>The HR and Employees’ reporting managers will have the privilege to approve/reject leave requests.</p>
-                    <p><img src="assets/images/leave_management/22.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>Self Service</strong> in the top menu</li>
-                        <li>Click <strong>Employee Leave</strong> in the submenu</li>
-                        <li>Click <strong>More Actions</strong> button in the Action column</li>
-                        <p>A small pop up window will open.</p>
-                        <p class="text-center"><img src="assets/images/leave_management/23.jpg" alt="" class="d-inline"></p>
-                        <li>Select the status</li>
-                        <li>Click <strong>SAVE</strong> button to complete the selected action.</li>
-                    </ol>
-                </div>                    
-
-                <div id="How_do_I_view_the_Approved_Leaves_and_Leave_Requests_of_all_the_Employees_Reporting_to_Me">
-                    <h2>How do I view the Approved Leaves and Leave Requests of all the Employees Reporting to Me?</h2>
-                    <p>Reporting Manager can view the approved leaves and leave requests of all the employees reporting to them by using the calendar plugin.</p>
-                    <p><img src="assets/images/leave_management/24.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>Self Service</strong> in the top menu</li>
-                        <li>Click <strong>Leave Request</strong> in the submenu</li>
-                        <li>Select the option <strong>‘Employee reporting to me’</strong></li>
-                        <p>For the day(s) on which employees have taken leave(s) or raised leave request(s), a horizontal bar having the employee’s name on it will be displayed across the dates.</p>
-                        <p class="text-center"><img src="assets/images/leave_management/25.jpg" alt="" class="img-fluid d-inline"></p>
-                        <p class="text-center"><img src="assets/images/down_arrow.jpg" alt="" class="d-inline"></p>
-                        <p class="text-center"><img src="assets/images/leave_management/26.jpg" alt="" class="img-fluid d-inline"></p> 
-                    </ol>
-                </div>
-                
-                <div id="How_do_I_view_my_own_Leave_s_Leave_Request_s">
-                    <h2>How do I view my own Leave(s)/Leave Request(s)?</h2>
-                    <p><img src="assets/images/leave_management/27.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>Self Service</strong> in the top menu</li>
-                        <li>Click <strong>Leave Request</strong> in the submenu</li>
-                        <li>A calendar plugin will be displayed.</li>
-                        <li>Select the option ‘Me’ (It will be selected by default)</li>
-                        <li>For the day(s) on which you have taken leave(s)/raised leave request(s), a horizontal bar will displayed across those dates.</li>
-                        <li>You can also see holidays</li>
-                    </ol>
-                    <p>Your leaves requests will be categorized in to 5 types:</p>
-                    <ul>
-                        <li>Pending Leaves</li>
-                        <li>anceled Leaves</li>
-                        <li>Approved Leaves</li>
-                        <li>Rejected Leaves</li>
-                        <li>All    
-                    </ul>
-                    <p><img src="assets/images/leave_management/28.jpg" alt="" class="img-fluid"></p>
-                    <p>Click on any category to view the leaves accordingly.</p>
-                    <p>An activity log will be displayed for every action performed by user(s) involved in a Leave Management Cycle. This will provide users more clarity about the status of the process.</p>
-                    <p><img src="assets/images/leave_management/29.jpg" alt="" class="img-fluid"></p>
-                </div>
-                
-                <div id="How_do_I_create_Holiday_Groups">
-                    <h2>How do I create Holiday Groups?</h2>
-                    <p>Holiday Groups are useful for organizations having teams located in different countries or which follow different holiday calendars.</p>
-                    <p><img src="assets/images/leave_management/30.jpg" alt="" class="img-fluid"></p>
-                    
-                    <ol class="alpha">
-                        <li>Click <strong>HR</strong> in the top menu</li>
-                        <li>Click <strong>Holiday Management</strong> on the left menu panel</li>
-                        <li>Click <strong>Manage Holiday Group</strong> in the submenu</li>
-                        <li>Click <strong>+Add</strong> button</li>
-                        <p><img src="assets/images/leave_management/31.jpg" alt="" class="img-fluid"></p>
-                        <li>Enter the required details</li>
-                        <li>Click <strong>SAVE</strong></li>
-                    </ol>
-                </div>
-
-                <div id="How_do_I_create_Holidays">
-                    <h2>How do I create Holidays?</h2>                        
-                    <p><img src="assets/images/leave_management/32.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>HR</strong> in the top menu</li>
-                        <li>Click <strong>Holiday Management</strong>on the left menu panel</li>
-                        <li>Click <strong>Manage Holidays</strong> in the submenu</li>
-                        <li>Click <strong>+Add</strong> button</li>
-                        <p><img src="assets/images/leave_management/33.jpg" alt="" class="img-fluid"></p>
-                        <li>Enter the required details</li>
-                        <li>Click <strong>SAVE</strong></li>
-                    </ol>
-                    <p>By providing a Holiday Group name, you will be assigning the Holiday to a Holiday Group.</p>
-                </div>
-
-                <div id="How_do_I_assign_Holidays_to_Employees">
-                    <h2>How do I assign Holidays to Employees?</h2>                        
-                    <p><img src="assets/images/leave_management/34.jpg" alt="" class="img-fluid"></p>
-                    <ol class="alpha">
-                        <li>Click <strong>HR</strong> in the top menu</li>
-                        <li>Click <strong>More Actions</strong> button in the Action column</li>
-                        <li>lick <strong>Edit</strong> icon</li>
-                        <p><img src="assets/images/leave_management/35.jpg" alt="" class="img-fluid"></p>
-                        <li>Click <strong>Holidays</strong> on the left menu panel (Form’s left side)</li>
-                        <li>Select a Holiday Group from the drop down option</li>
-                        <li>Create a new Holiday Group</li>
-                        <p><img src="assets/images/leave_management/36.jpg" alt="" class="img-fluid"></p>
-                        <li>A grid containing the holidays in the holiday group will be displayed</li>
-                        <li>Click <strong>SAVE</strong></li>
-                    </ol>
-                    <p>The employee will now be able to see holidays on the calendar plugin.</p>
                 </div>
             </div>
-            
+
+            <div id="How_do_I_configure_Leave_Management_Settings">
+                <h2>How do I configure Leave Management Settings?</h2>
+                <p><strong>Leave Management Options</strong></p>
+                <p><img src="assets/images/leave_management/02.jpg" alt="" class="img-fluid"></p>
+                <p>To configure leave management options:</p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Leave Management</strong> in the left panel</li>
+                    <li>Click <strong>Leave Management Options </strong> in the submenu</li>
+                    <li>Click <strong>+Add button </strong> in the right side</li>
+                </ol>
+                <p><img src="assets/images/leave_management/03.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="5">
+                    <li>Fill in the required details</li>
+                    <li><strong>Allow Leave Transfers: </strong> If there are any unused leaves for an employee in the current year, then by using this option they will be carried forward to the next year</li>
+                    <li><strong>Skip Holidays: </strong> If a user applies for a vacation which includes any pre-declared holiday, then by using this option, holiday will be excluded from the vacation days</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+
+                <div class="media p-2 col-10 offset-1">
+                    <img src="assets/images/hint_bulb.jpg" alt="" class="mr-3">
+                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                        If each business unit in your organization has different working days and hours, then using this option you can configure the settings.
+                    </p>
+                </div>
+            </div>
+
+            <div id="How_do_I_create_Leave_Types">
+                <h2>How do I create Leave Types?</h2>
+                <p><img src="assets/images/leave_management/04.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Employee Configuration</strong> on the left menu panel</li>
+                    <li>Click <strong>Leave Types</strong> in the submenu</li>
+                    <li>Click <strong>+Add</strong> button on the right side</li>
+                </ol>
+                <p><img src="assets/images/leave_management/05.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="5">
+                    <li>Fill in the required details</li>
+                    <li>Click <strong>SAVE</strong> button to create a new leave type</li>
+                </ol>
+                <div class="media p-2 col-10 offset-1">
+                    <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                        The number of days assigned to a Leave Type denotes the maximum number of days a User can apply for a leave at one go. It’s not the total leave balance for a leave type.
+                    </p>
+                </div>
+            </div>
+
+            <div id="How_do_I_allocate_Leave_to_Employees">
+                <h2>How do I allocate Leave to Employees?</h2>
+                <p>There are two ways to allocate leaves to employees:</p>
+                <ol class="decimal">
+                    <li>Multiple employees at once (according to Business Units and Departments)</li>
+                    <li>One employee at a time</li>
+                </ol>
+                <p class="text-underline">
+                    Multiple employees at once (according to Business Units and Departments)
+                </p>
+                <p><img src="assets/images/leave_management/06.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Leave Management</strong> on the left side panel</li>
+                    <li>Click <strong>Add Employee Leave</strong> in the submenu</li>
+                    <li>Click <strong>+Add button</strong> on the right side</li>
+                </ol>
+                <p><img src="assets/images/leave_management/07.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="5">
+                    <li>Select the Business Unit(s)</li>
+                    <li>Select the Department(s)</li>
+                </ol>
+                <p>All the employees in the selected Business Unit(s) and Department(s) will be displayed.</p>
+                <p><img src="assets/images/leave_management/08.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="7">
+                    <li>Click <strong>Edit</strong> icon</li>
+                    <li>Enter the number of leaves for each employee</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+                <p class="text-underline">
+                    One employee at a time
+                </p>
+                <p><img src="assets/images/leave_management/09.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>More Actions</strong> icon</li>
+                    <li>Click <strong>Edit</strong> icon</li>
+                </ol>
+                <p><img src="assets/images/leave_management/10.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="4">
+                    <li>Click <strong>Leaves</strong> on the left menu panel (left side of the form)</li>
+                    <li>Enter the number of days for this employee</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+                <div class="media p-2 col-10 offset-1">
+                    <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                        You can allocate leaves to employees only for the current year.
+                    </p>
+                </div>
+            </div>
+
+            <div id="How_do_I_deduct_Leaves_from_an_Employee">
+                <h2>How do I deduct Leaves from an Employee?</h2>
+                <p><img src="assets/images/leave_management/11.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>More Actions</strong> icon</li>
+                    <li>Click <strong>Edit</strong> icon</li>
+                </ol>
+                <p><img src="assets/images/leave_management/12.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="4">
+                    <li>Click <strong>Leaves </strong> on the left menu panel (on the left side of the form)</li>
+                    <li>Enter the number of days with a <em>'-' sign preceding the number</em> for the employee</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+                <div class="media p-2 col-10 offset-1">
+                    <img src="assets/images/hint_bulb.jpg" alt="" class="mr-3">
+                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                        You can add/remove leaves for an employee, whenever required. (Only for the current year).
+                    </p>
+                </div>
+            </div>
+
+            <div id="#How_do_I_create_HR_Email_Group_for_Leave_Management">
+                <h2>How do I create HR Email Group for Leave Management?</h2>
+                <p>Employees and their reporting managers are informed through email notifications about any action (leave request raised, leave request approved etc.) taken during the leave cycle. In order to send email notifications to HR also, you will need to configure an HR email group. If an HR group email is not configured, the following message will be displayed:</p>
+                <p class="text-center"><img src="assets/images/leave_management/mail_msg_01.jpg" alt=""></p>
+                <p><img src="assets/images/leave_management/13.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click Site Config on the top menu</li>
+                    <li>Click General on the left menu panel</li>
+                    <li>Click Email Contacts in the submenu</li>
+                    <li>Click +Add button</li>
+                </ol>
+                <p><img src="assets/images/leave_management/14.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="5">
+                    <li>Select the Business Unit</li>
+                    <li>Select Leave Management Group</li>
+                    <li>Enter group email id</li>
+                    <li>Click SAVE button</li>
+                </ol>
+                <div class="media p-2 col-10 offset-1">
+                    <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                        Every HR email must be unique for a Business Unit. If repeated, you will get an error message:
+                        <img src="assets/images/leave_management/mail_msg_02.jpg" alt="" class="img-fluid">
+                    </p>
+                </div>
+            </div>
+            <div id="#How_do_I_raise_a_Leave_Request">
+                <h2>How do I raise a Leave Request?</h2>
+                <p>Before raising a leave request, ensure that you have been allotted leaves for the current year. If you have not been allotted leave an information message will be displayed:</p>
+                <p><img src="assets/images/leave_management/mail_msg_03.jpg" alt=""></p>
+                <p class="text-underline">
+                    To raise a leave request:
+                </p>
+                <p><img src="assets/images/leave_management/15.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>Self Service</strong> in the top menu</li>
+                    <li>Click <strong>Leave Request</strong> in the submenu</li>
+                    <li>The current month calendar will be displayed on the right side panel</li>
+                    <li>Click on previous and next arrow buttons to move to previous or next month</li>
+                    <li>Click <strong>Apply Leave</strong> to apply leave for the current day</li>
+                    <li>Click on any date on the calendar plugin to apply for a day’s leave</li>
+                    <li>Click and drag on the dates to apply for a long leave (multiple days)</li>
+                </ol>
+                <p>After <strong>e/f/g</strong> a small window <strong>‘Create: Leave Request’</strong> will open.</p>
+                <p><img src="assets/images/leave_management/16.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="8">
+                    <li>Enter the required details</li>
+                    <li>Click <strong>Apply</strong> button</li>
+                </ol>
+                <p>Leave requests will be displayed in 'Pending Leaves' until an action is performed by the reporting manager</p>
+                <p><img src="assets/images/leave_management/17.jpg" alt="" class="img-fluid"></p>
+            </div>
+
+            <div id="#How_do_I_cancel_a_Leave_Request">
+                <h2>How do I cancel a Leave Request?</h2>
+                <p>Employees can cancel an unapproved leave request at any time. Once a leave request has been approved, they can cancel it only <strong>ONE DAY BEFORE</strong> the actual leave date. Managers can cancel approved leaves at any time</p>
+                <p class="text-underline">Employee</p>
+                <p><img src="assets/images/leave_management/18.jpg" alt="" class="img-fluid"></p>
+
+                <ol class="alpha">
+                    <li>Click <strong>Self Service</strong> in the top menu bar</li>
+                    <li>Click <strong>My Leave</strong> in the submenu</li>
+                    <li>Click <strong>Cancel</strong> icon in the Action column</li>
+                </ol>
+                <p>A confirmation message will be displayed</p>
+                <p class="text-center"><img src="assets/images/leave_management/19.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="4">
+                    <li>Click <strong>Yes</strong> button to cancel the leave</li>
+                </ol>
+                <p>You can view your cancelled leaves in <strong>Self Service > Leaves > My Leaves > Cancelled Leaves</strong></p>
+                <p class="text-underline">Manager</p>
+                <p><img src="assets/images/leave_management/20.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>Self Service</strong> in the top menu bar</li>
+                    <li>Click <strong>Employee Leave</strong> on the left side panel</li>
+                    <li>Click <strong>More Action</strong> button in the Action</li>
+                </ol>
+                <p>A small pop up window will open:</p>
+                <p><img src="assets/images/leave_management/21.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="4">
+                    <li>Select <strong>Cancel</strong></li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+            </div>
+
+            <div id="How_do_I_Approve_Reject_an_Employees_Leave_Request">
+                <h2>How do I Approve/Reject an Employee’s Leave Request?</h2>
+                <p>The HR and Employees’ reporting managers will have the privilege to approve/reject leave requests.</p>
+                <p><img src="assets/images/leave_management/22.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>Self Service</strong> in the top menu</li>
+                    <li>Click <strong>Employee Leave</strong> in the submenu</li>
+                    <li>Click <strong>More Actions</strong> button in the Action column</li>
+                </ol>
+                <p>A small pop up window will open.</p>
+                <p class="text-center"><img src="assets/images/leave_management/23.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="4">
+                    <li>Select the status</li>
+                    <li>Click <strong>SAVE</strong> button to complete the selected action.</li>
+                </ol>
+            </div>
+
+            <div id="How_do_I_view_the_Approved_Leaves_and_Leave_Requests_of_all_the_Employees_Reporting_to_Me">
+                <h2>How do I view the Approved Leaves and Leave Requests of all the Employees Reporting to Me?</h2>
+                <p>Reporting Manager can view the approved leaves and leave requests of all the employees reporting to them by using the calendar plugin.</p>
+                <p><img src="assets/images/leave_management/24.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>Self Service</strong> in the top menu</li>
+                    <li>Click <strong>Leave Request</strong> in the submenu</li>
+                    <li>Select the option <strong>‘Employee reporting to me’</strong></li>
+                </ol>
+                <p>For the day(s) on which employees have taken leave(s) or raised leave request(s), a horizontal bar having the employee’s name on it will be displayed across the dates.</p>
+                <p><img src="assets/images/leave_management/25.jpg" alt="" class="img-fluid"></p>
+                <p><img src="assets/images/down_arrow.jpg" alt="" class="img-fluid"></p>
+                <p><img src="assets/images/leave_management/26.jpg" alt="" class="img-fluid"></p>
+            </div>
+
+            <div id="How_do_I_view_my_own_Leave_s_Leave_Request_s">
+                <h2>How do I view my own Leave(s)/Leave Request(s)?</h2>
+                <p><img src="assets/images/leave_management/27.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>Self Service</strong> in the top menu</li>
+                    <li>Click <strong>Leave Request</strong> in the submenu</li>
+                    <li>A calendar plugin will be displayed.</li>
+                    <li>Select the option ‘Me’ (It will be selected by default)</li>
+                    <li>For the day(s) on which you have taken leave(s)/raised leave request(s), a horizontal bar will displayed across those dates.</li>
+                    <li>You can also see holidays</li>
+                </ol>
+                <p>Your leaves requests will be categorized in to 5 types:</p>
+                <ul>
+                    <li>Pending Leaves</li>
+                    <li>anceled Leaves</li>
+                    <li>Approved Leaves</li>
+                    <li>Rejected Leaves</li>
+                    <li>All</li>
+                </ul>
+                <p><img src="assets/images/leave_management/28.jpg" alt="" class="img-fluid"></p>
+                <p>Click on any category to view the leaves accordingly.</p>
+                <p>An activity log will be displayed for every action performed by user(s) involved in a Leave Management Cycle. This will provide users more clarity about the status of the process.</p>
+                <p><img src="assets/images/leave_management/29.jpg" alt="" class="img-fluid"></p>
+            </div>
+
+            <div id="How_do_I_create_Holiday_Groups">
+                <h2>How do I create Holiday Groups?</h2>
+                <p>Holiday Groups are useful for organizations having teams located in different countries or which follow different holiday calendars.</p>
+                <p><img src="assets/images/leave_management/30.jpg" alt="" class="img-fluid"></p>
+
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Holiday Management</strong> on the left menu panel</li>
+                    <li>Click <strong>Manage Holiday Group</strong> in the submenu</li>
+                    <li>Click <strong>+Add</strong> button</li>
+                </ol>
+                <p><img src="assets/images/leave_management/31.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="5">
+                    <li>Enter the required details</li>
+                    <li>Click <strong>SAVE</strong></li>
+                </ol>
+            </div>
+
+            <div id="How_do_I_create_Holidays">
+                <h2>How do I create Holidays?</h2>
+                <p><img src="assets/images/leave_management/32.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Holiday Management</strong>on the left menu panel</li>
+                    <li>Click <strong>Manage Holidays</strong> in the submenu</li>
+                    <li>Click <strong>+Add</strong> button</li>
+                </ol>
+                <p><img src="assets/images/leave_management/33.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="5">
+                    <li>Enter the required details</li>
+                    <li>Click <strong>SAVE</strong></li>
+                </ol>
+                <p>By providing a Holiday Group name, you will be assigning the Holiday to a Holiday Group.</p>
+            </div>
+
+            <div id="How_do_I_assign_Holidays_to_Employees">
+                <h2>How do I assign Holidays to Employees?</h2>
+                <p><img src="assets/images/leave_management/34.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>More Actions</strong> button in the Action column</li>
+                    <li>lick <strong>Edit</strong> icon</li>
+                </ol>
+                <p><img src="assets/images/leave_management/35.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="4">
+                    <li>Click <strong>Holidays</strong> on the left menu panel (Form’s left side)</li>
+                    <li>Select a Holiday Group from the drop down option</li>
+                    <li>Create a new Holiday Group</li>
+                </ol>
+                <p><img src="assets/images/leave_management/36.jpg" alt="" class="img-fluid"></p>
+                <ol class="alpha" start="8">
+                    <li>A grid containing the holidays in the holiday group will be displayed</li>
+                    <li>Click <strong>SAVE</strong></li>
+                </ol>
+                <p>The employee will now be able to see holidays on the calendar plugin.</p>
+            </div>
         </div>
-    </main>        
+    </div>
+</main>

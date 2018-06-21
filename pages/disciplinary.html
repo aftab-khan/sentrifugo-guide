@@ -1,93 +1,93 @@
 <main ng-controller="DisciplinaryCtrl">
-        <div class="row">
-            <nav id="stickybar" class="col-xl-3 col-md-3" data-simplebar data-simplebar-auto-hide="true">
+    <div class="row">
+        <nav id="stickybar" class="col-xl-3 col-md-3" data-simplebar data-simplebar-auto-hide="true">
+            <ul>
+                <li class="active"><a href="#!disciplinary/#violation-type">How do I create a Violation Type?</a></li>
+                <li class="active"><a href="#!disciplinary/#raise-a-disciplinary-incident">How do I raise a disciplinary incident?</a></li>
+                <li class="active"><a href="#!disciplinary/#view-my-disciplinary-incidents">How do I view my disciplinary incidents?</a></li>
+                <li class="active"><a href="#!disciplinary/#t-d-i">How do I view my team members’ (employees) disciplinary incidents?</a></li>
+                <li class="active"><a href="#!disciplinary/#app-statement">How do I provide my appeal statement?</a></li>
+            </ul>
+        </nav>
+        <div id="main" class="col-xl-9 col-md-9">
+            <div class="overview">
+                <p>This module will enable users to follow a streamlined approach for disciplinary incident management process. Employers can raise disciplinary incident(s) against employees (defaulters) in the organization. The employees (defaulters) are given an opportunity to make an appeal by providing their statement. On the basis of the employee’s (defaulter) statement and misdemeanor evidence, he/she can be pronounced guilty/no guilty. If found guilty, a corrective action can be taken.</p>
+                <p><img src="assets/images/disiplinary/1.jpg" class="img-fluid" alt="" /></p>
+                <p><strong>Process Description:</strong></p>
                 <ul>
-                    <li class="active"><a href="#!disciplinary/#violation-type">How do I create a Violation Type?</a></li>
-                    <li class="active"><a href="#!disciplinary/#raise-a-disciplinary-incident">How do I raise a disciplinary incident?</a></li>
-                    <li class="active"><a href="#!disciplinary/#view-my-disciplinary-incidents">How do I view my disciplinary incidents?</a></li>
-                    <li class="active"><a href="#!disciplinary/#t-d-i">How do I view my team members’ (employees) disciplinary incidents?</a></li>
-                    <li class="active"><a href="#!disciplinary/#app-statement">How do I provide my appeal statement?</a></li>
+                    <li>User (Management) raises a disciplinary incident against an employee </li>
+                    <li>Employee can provide his/her appeal statement </li>
+                    <li>If the employee does not provide his/her appeal statement within the expiry date, then he/she will not be able to provide the appeal statement. In that case the User (Management) can provide the statement on behalf of the employee </li>
+                    <li>The User (Management) will then decide the verdict for the employee (defaulter) and select a suitable corrective action </li>
                 </ul>
-            </nav>
-            <div id="main" class="col-xl-9 col-md-9">
-                <div class="overview">
-                    <p>This module will enable users to follow a streamlined approach for disciplinary incident management process. Employers can raise disciplinary incident(s) against employees (defaulters) in the organization. The employees (defaulters) are given an opportunity to make an appeal by providing their statement. On the basis of the employee’s (defaulter) statement and misdemeanor evidence, he/she can be pronounced guilty/no guilty. If found guilty, a corrective action can be taken.</p>
-                    <p><img src="assets/images/disiplinary/1.jpg" class="img-fluid" alt="" /></p>
-                    <p><strong>Process Description:</strong></p>
-                    <ul>
-                        <li>User (Management) raises a disciplinary incident against an employee </li>
-                        <li>Employee can provide his/her appeal statement </li>
-                        <li>If the employee does not provide his/her appeal statement within the expiry date, then he/she will not be able to provide the appeal statement. In that case the User (Management) can provide the statement on behalf of the employee </li>
-                        <li>The User (Management) will then decide the verdict for the employee (defaulter) and select a suitable corrective action </li>
-                    </ul>
-                    <div id="violation-type">
-                        <h2>How do I create a Violation Type?</h2>
-                        <div class="media p-2 col-10 offset-1"> <img src="assets/images/notpad.jpg" alt="" class="mr-3">
-                            <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight"> Only a Super Admin/Management can create a violation type. </p>
-                        </div>
-                        <p><img src="assets/images/disiplinary/2.jpg" class="img-fluid" alt="" /></p>
-                        <ol class="alpha">
-                            <li>Click <strong>Disciplinary</strong> in the top menu</li>
-                            <li>Click <strong>Violation Type</strong> on the left menu panel</li>
-                            <p><img src="assets/images/disiplinary/3.jpg" class="img-fluid" alt="" /></p>
-                            <li>Click <strong>+Add</strong>. button on the grid’s top right corner</li>
-                            <p><img src="assets/images/disiplinary/4.jpg" class="img-fluid" alt="" /></p>
-                            <li>Enter ‘Violation Type’ name and its description</li>
-                            <li>Click <strong>SAVE</strong> button</li>
-                        </ol>
+                <div id="violation-type">
+                    <h2>How do I create a Violation Type?</h2>
+                    <div class="media p-2 col-10 offset-1"> <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                        <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight"> Only a Super Admin/Management can create a violation type. </p>
                     </div>
-                    <div id="raise-a-disciplinary-incident">
-                        <h2>How do I raise a disciplinary incident?</h2>
-                        <p><img src="assets/images/disiplinary/5.jpg" class="img-fluid" alt="" /></p>
-                        <ol class="alpha">
-                            <li>Click <strong>Disciplinary</strong> in the top menu</li>
-                            <li>Click <strong>Raise an Incident</strong> on the left menu panel</li>
-                            <p><img src="assets/images/disiplinary/6.jpg" class="img-fluid" alt="" /></p>
-                            <li>Click <strong>Raise an incident</strong> button on the grid’s top right corner</li>
-                            <p><img src="assets/images/disiplinary/7.jpg" class="img-fluid" alt="" /></p>
-                            <li>Incident Raised By field will be auto populated </li>
-                            <li>Enter the required details </li>
-                            <li>Click Add <strong>Violation Type</strong> to add a new violation type </li>
-                            <li>Choose <strong>Yes</strong> to allow an employee appeal and <strong>No</strong> to disallow an employee appeal </li>
-                            <li>Click <strong>SAVE</strong> button. </li>
-                        </ol>
-                    </div>
-                    <div id="view-my-disciplinary-incidents">
-                        <h2>How do I view my disciplinary incidents?</h2>
-                        <p><img src="assets/images/disiplinary/8.jpg" class="img-fluid" alt="" /></p>
-                        <ol class="alpha">
-                            <li>Click <strong>Disciplinary </strong>in the top menu</li>
-                            <li>Click <strong>My Incidents</strong> on the left menu panel</li>
-                            <li>Click on the record to view details.</li>
-                        </ol>
-                        <p><img src="assets/images/disiplinary/9.jpg" class="img-fluid" alt="" /></p>
-                    </div>
-                    <div id="t-d-i">
-                        <h2>How do I view my team members’ (employees) disciplinary incidents?</h2>
-                        <p><img src="assets/images/disiplinary/10.jpg" class="img-fluid" alt="" /></p>
-                        <ol class="alpha">
-                            <li>Click <strong>Disciplinary </strong>in the top menu</li>
-                            <li>Click <strong>My Incidents</strong> on the left menu panel</li>
-                            <li>Click on the record to view details.</li>
-                        </ol>
-                        <p><img src="assets/images/disiplinary/11.jpg" class="img-fluid" alt="" /></p>
-                    </div>
-                    <div id="app-statement">
-                        <h2>How do I provide my appeal statement?</h2>
-                        <p><img src="assets/images/disiplinary/12.jpg" class="img-fluid" alt="" /></p>
-                        <ol class="alpha">
-                            <li>Click <strong>Disciplinary</strong> in the top menu
-                            </li>
-                            <li>Click <strong>My Incidents</strong> on the left menu panel
-                            </li>
-                            <li>Click <strong>edit</strong> icon in the Action column</li>
-                            <p><img src="assets/images/disiplinary/13.jpg" class="img-fluid" alt="" /></p>
-                            <li>Select Yes if <strong>you</strong> want to appeal and <strong>No</strong> if you don’t want to appeal</li>
-                            <li>Provide your statement in the <strong>Employee Statements</strong> textbox</li>
-                            <li>Click <strong>SAVE</strong> button</li>
-                        </ol>
-                    </div>
+                    <p><img src="assets/images/disiplinary/2.jpg" class="img-fluid" alt="" /></p>
+                    <ol class="alpha">
+                        <li>Click <strong>Disciplinary</strong> in the top menu</li>
+                        <li>Click <strong>Violation Type</strong> on the left menu panel</li>
+                        <p><img src="assets/images/disiplinary/3.jpg" class="img-fluid" alt="" /></p>
+                        <li>Click <strong>+Add</strong>. button on the grid’s top right corner</li>
+                        <p><img src="assets/images/disiplinary/4.jpg" class="img-fluid" alt="" /></p>
+                        <li>Enter ‘Violation Type’ name and its description</li>
+                        <li>Click <strong>SAVE</strong> button</li>
+                    </ol>
+                </div>
+                <div id="raise-a-disciplinary-incident">
+                    <h2>How do I raise a disciplinary incident?</h2>
+                    <p><img src="assets/images/disiplinary/5.jpg" class="img-fluid" alt="" /></p>
+                    <ol class="alpha">
+                        <li>Click <strong>Disciplinary</strong> in the top menu</li>
+                        <li>Click <strong>Raise an Incident</strong> on the left menu panel</li>
+                        <p><img src="assets/images/disiplinary/6.jpg" class="img-fluid" alt="" /></p>
+                        <li>Click <strong>Raise an incident</strong> button on the grid’s top right corner</li>
+                        <p><img src="assets/images/disiplinary/7.jpg" class="img-fluid" alt="" /></p>
+                        <li>Incident Raised By field will be auto populated </li>
+                        <li>Enter the required details </li>
+                        <li>Click Add <strong>Violation Type</strong> to add a new violation type </li>
+                        <li>Choose <strong>Yes</strong> to allow an employee appeal and <strong>No</strong> to disallow an employee appeal </li>
+                        <li>Click <strong>SAVE</strong> button. </li>
+                    </ol>
+                </div>
+                <div id="view-my-disciplinary-incidents">
+                    <h2>How do I view my disciplinary incidents?</h2>
+                    <p><img src="assets/images/disiplinary/8.jpg" class="img-fluid" alt="" /></p>
+                    <ol class="alpha">
+                        <li>Click <strong>Disciplinary </strong>in the top menu</li>
+                        <li>Click <strong>My Incidents</strong> on the left menu panel</li>
+                        <li>Click on the record to view details.</li>
+                    </ol>
+                    <p><img src="assets/images/disiplinary/9.jpg" class="img-fluid" alt="" /></p>
+                </div>
+                <div id="t-d-i">
+                    <h2>How do I view my team members’ (employees) disciplinary incidents?</h2>
+                    <p><img src="assets/images/disiplinary/10.jpg" class="img-fluid" alt="" /></p>
+                    <ol class="alpha">
+                        <li>Click <strong>Disciplinary </strong>in the top menu</li>
+                        <li>Click <strong>My Incidents</strong> on the left menu panel</li>
+                        <li>Click on the record to view details.</li>
+                    </ol>
+                    <p><img src="assets/images/disiplinary/11.jpg" class="img-fluid" alt="" /></p>
+                </div>
+                <div id="app-statement">
+                    <h2>How do I provide my appeal statement?</h2>
+                    <p><img src="assets/images/disiplinary/12.jpg" class="img-fluid" alt="" /></p>
+                    <ol class="alpha">
+                        <li>Click <strong>Disciplinary</strong> in the top menu
+                        </li>
+                        <li>Click <strong>My Incidents</strong> on the left menu panel
+                        </li>
+                        <li>Click <strong>edit</strong> icon in the Action column</li>
+                        <p><img src="assets/images/disiplinary/13.jpg" class="img-fluid" alt="" /></p>
+                        <li>Select Yes if <strong>you</strong> want to appeal and <strong>No</strong> if you don’t want to appeal</li>
+                        <li>Provide your statement in the <strong>Employee Statements</strong> textbox</li>
+                        <li>Click <strong>SAVE</strong> button</li>
+                    </ol>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>

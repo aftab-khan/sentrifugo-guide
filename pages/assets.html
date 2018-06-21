@@ -1,0 +1,105 @@
+<main ng-controller="AssetsCtrl">
+    <div class="row">
+        <nav id="stickybar" class="col-xl-3 col-md-3" data-simplebar data-simplebar-auto-hide="true">
+            <ul>
+                <li class="active"><a href="#!assets/#How_do_I_create_an_Asset_Category">How do I create an Asset Category?</a></li>
+                <li class="active"><a href="#!assets/#How_do_I_add_an_Asset">How do I add an Asset?</a></li>
+                <li class="active"><a href="#!assets/#How_do_I_view_my_Asset_s_details">How do I view my Asset(s) details?</a></li>
+                <li class="active"><a href="#!assets/#How_do_I_raise_a_Service_Request_related_to_my_Asset">How do I raise a Service Request related to my Asset?</a></li>
+            </ul>
+        </nav>
+        <div id="main" class="col-xl-9 col-md-9">
+            <div class="overview">
+                <p>Keep a track of your organization’s assets like computers, laptops, phones etc. and assign them to employees. It enables the Employers to have quick access to information related to all the assets in the organization. A user can create asset categories and subcategories. Asset details such as invoice number, vendor details, warranty status, asset images etc. can be added and then assigned to employees.</p>
+                <p><img src="assets/images/assets/01.jpg" class="img-fluid" alt="" /></p>
+                <p><strong>Process Description:</strong></p>
+                <ul>
+                    <li>User (Management/HR/System Admin) can add a new Asset Category</li>
+                    <li>User then creates a new asset by providing asset details and allocating that asset to an employee</li>
+                    <li>User can allocate/reallocating existing assets to employees</li>
+                    <li>A User (Any User/Employee who has a reporting manager) raises an asset request.</li>
+                    <li>The Executor(s), Viewer(s) and the User will receive an email notification.</li>
+                    <li>The Executor has 3 options:
+                        <ul>
+                            <li>He/she can execute and close the service request</li>
+                            <li>Request for Management’s approval</li>
+                            <li>Request for User’s manager’s approval</li>
+                        </ul>
+                    </li>
+                    <li>The actual execution takes place offline If the Executor has requested for either User’s Reporting Manager or Management’s approval, then the request can be closed once one/both of them have approved</li>
+                    <li>If the User’s Reporting Manager or Management reject the request, then the executor can close the request</li>
+                    <li>The Reporting Manager or Management will receive an email notification if an approval is sought from them by the executor(s).</li>
+                </ul>
+            </div>
+
+            <div id="How_do_I_create_an_Asset_Category">
+                <h2>How do I create an Asset Category?</h2>
+                <p><img src="assets/images/assets/02.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha">
+                    <li>Click <strong>Assets </strong> in the top menu</li>
+                </ol>                
+                <p><img src="assets/images/assets/03.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha" start="2">
+                    <li>Click <strong>Asset Category</strong> on the left panel</li>
+                    <li>Click <strong>+Add</strong> button</li>
+                </ol>                
+                <p><img src="assets/images/assets/04.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha" start="4">
+                    <li>Enter the required details</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>    
+            </div>
+
+            <div id="How_do_I_add_an_Asset">
+                <h2>How do I add an Asset?</h2>
+                <p><img src="assets/images/assets/05.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha">
+                    <li>Click <strong>Assets </strong> in the top menu</li>
+                </ol>                
+                <p><img src="assets/images/assets/06.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha" start="2">
+                    <li>Click <strong>Assets </strong> in the left panel</li>
+                    <li>Click <strong>+Add</strong> button</li>
+                </ol>              
+                <p><img src="assets/images/assets/07.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha" start="4">
+                    <li>Enter the required details</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+            </div>
+            
+            <div id="How_do_I_view_my_Asset_s_details">
+                <h2>How do I view my Asset(s) details?</h2>
+                <p><img src="assets/images/assets/08.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha">
+                    <li>Click <strong>Self Service</strong> in the top menu</li>
+                    <li>Click <strong>My Details</strong> on the left menu panel</li>
+                    <li>Click <strong>Asset Details</strong> menu option on the form’s left side</li>
+                    <li>View your details  here</li>
+                </ol>  
+            </div>
+            
+            <div id="How_do_I_raise_a_Service_Request_related_to_my_Asset">
+                <h2>How do I raise a Service Request related to my Asset?</h2>
+                <p><img src="assets/images/assets/09.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha">
+                    <li>Click <strong>Service Request</strong> in the top menu</li>
+                    <li>Click <strong>My request summary</strong> on the left menu panel</li>
+                    <li>Click <strong>+Raise a Request</strong> button on the right side</li>
+                </ol>  
+                <p><img src="assets/images/assets/10.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha" start="4">
+                    <li>Select <strong>Asset</strong> in the field ‘Request For’</li>
+                    <li>Fill in the required details</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>                  
+                <div class="media p-2 col-10 offset-1">
+                    <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                            An asset name will only be populated if an asset is allocated to the employee. Also, please ensure the asset category is configured in: <strong>Service Request > Configuration > Settings > +Add</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
