@@ -1,0 +1,130 @@
+<main ng-controller="HRCtrl">
+    <div class="row">
+        <nav id="stickybar" class="col-xl-3 col-md-3" data-simplebar data-simplebar-auto-hide="true">
+            <ul>
+                <li class="active"><a href="#!hr/#Manage-rolls-privilages">How do I manage Roles & Privileges?</a></li>
+                <li class=""><a href="#!hr/#add-external-users">How do I add External Users?</a></li>
+                <li class=""><a href="#!hr/#select-emp-tabs">How do I select Employee Tabs?</a></li>
+                <li class=""><a href="#!hr/#emp-config">How do I set Employee Configuration?</a></li>
+                <li class=""><a href="#!hr/#id-docs">How do I configure Identity Documents settings?</a></li>
+            </ul>
+        </nav>
+        <div id="main" class="col-xl-9 col-md-9">
+            <div class="overview">
+                <p>HR (Human Resource) deals with user, leave and holiday management configuration. It stores the employee data which includes personal, official, experience, documents, education, visa & immigration details etc.</p>
+                <p><strong>Adding Employees</strong></p>
+                <p>Please refer to section 1.4 How do I add employees to Sentrifugo?</p>
+            </div>
+            <div id="Manage-rolls-privilages">
+                <h2>How do I manage Roles & Privileges?</h2>
+                <p>Access to important data must be monitored and restricted to certain users only. Sentrifugo understands your need for security and enables you to protect your data from unauthorized access through the ‘Access Control’ feature.</p>
+                <p>By using the option Roles & Privileges in the module HR, each role group can be allowed or disallowed to add/delete/edit/view certain features. Only the Super Admin & Management role group can assign or deny privileges to users.</p>
+                <p>As mentioned earlier in section 1.1 What are the roles available in Sentrifugo?, there are 6 main role groups available by default in Sentrifugo:</p>
+                <ul>
+                    <li>Management</li>
+                    <li>Manager</li>
+                    <li>HR</li>
+                    <li>Employee</li>
+                    <li>System Admin</li>
+                    <li>External User </li>
+                </ul>
+                <p>Within each role group a maximum of 5 role groups can be created.</p>
+                <p><strong>To create a new role:</strong></p>
+                <p><img src="assets/images/hr/1.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Roles & Privileges </strong> in the left menu panel</li>
+                    <li>Click <strong>+Add</strong> button on the right side</li>
+                    <p><img src="assets/images/hr/2.jpg" alt="" class="img-fluid"></p>
+                    <li>Click on the default role you want on the left side </li>
+                    <li>Fill in the required details</li>
+                    <li>Click on the triangle dropdown icon to view the privilege options </li>
+                    <li>Select the modules and their respective privileges you require for this role </li>
+                    <li>Click <strong>SAVE</strong> button </li>
+                </ol>
+            </div>
+            <div id="add-external-users">
+                <h2>How do I add External Users?</h2>
+                <p>External Users have limited access to information on Sentrifugo. There are 2 types of External Users in this application:</p>
+                <ul>
+                    <li>Background Check Agency Users</li>
+                    <li>External User (For any purpose suitable for your organization)</li>
+                </ul>
+                For other external roles such as Vendors and Clients, please refer Contacts.
+                <p><img src="assets/images/hr/3.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Contacts</strong> in the left menu panel</li>
+                    <li>Click <strong>External Users </strong> in the submenu</li>
+                    <li>Click <strong>+Add button </strong> in the right side</li>
+                    <p><img src="assets/images/hr/4.jpg" class="img-fluid" alt="" /></p>
+                    <li>Fill in the required details</li>
+                    <li>Click here to change the identity code</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+                <div class="media p-2 col-10 offset-1"> <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight"> External roles will have only the privilege to ‘view’Organization Details will populate in the drop down option for field ‘Assign Role’. </p>
+                </div>
+                <p><strong>Holiday Management</strong></p>
+                <p>Please refer section 3.11 – 3.13</p>
+                <p><strong>Leave Management</strong></p>
+                <p>Please refer section 3. Leave Management</p>
+                <p><strong>Employee Configuration</strong></p>
+                <p>This feature will let you choose the tabs such as salary details, holidays, documents etc. to be displayed in every employee record. You can also configure each tab and add details. </p>
+            </div>
+            <div id="select-emp-tabs">
+                <h2>How do I select Employee Tabs?</h2>
+                <p><img src="assets/images/hr/5.jpg" class="img-fluid" alt="" /></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Employee Configuration</strong> on the left menu panel</li>
+                    <li>Click <strong>Employee Tabs</strong> in the submenu</li>
+                    <li>Click <strong>Edit</strong> icon to configure tabs for employees</li>
+                    <li>To enable specific tabs for employees, select individual checkboxes</li>
+                    <p><img src="assets/images/hr/6.jpg" class="img-fluid" width="1205" height="495" alt="" /></p>
+                    <li>To enable all the tabs for employees, check “Check All” checkbox</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+            </div>
+            <div id="emp-config">
+                <h4>How do I set Employee Configuration?</h4>
+                <p><img src="assets/images/hr/7.jpg" class="img-fluid" width="1269" height="825" alt="" /></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Employee Configuration</strong> on the left panel</li>
+                    <li>Click any sub menu option you would like to add (We have chosen ‘Employment Status’ as an example)</li>
+                    <li>Click <strong>+Add</strong> button on the right side panel</li>
+                    <p><img src="assets/images/hr/8.jpg" class="img-fluid" width="1269" height="825" alt="" /></p>
+                    <li>Enter the required details</li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+            </div>
+            <div id="id-docs">
+                <h2>How do I configure Identity Documents settings?</h2>
+                <p><img src="assets/images/hr/9.jpg" class="img-fluid" width="1210" height="713" alt="" /></p>
+                <ol class="alpha">
+                    <li>Click <strong>HR</strong> in the top menu</li>
+                    <li>Click <strong>Employee Configuration</strong> on the left menu panel</li>
+                    <li>Click <strong>dentity Documents</strong> in the submenu
+                    </li>
+                    <li>Click <strong>+Add</strong> button on the right side panel
+                    </li>
+                    <p><img src="assets/images/hr/10.jpg" class="img-fluid" width="1210" height="713" alt="" /></p>
+                    <li>Enter document name
+                    </li>
+                    <li>Select if you require a document to be mandatory or not
+                    </li>
+                    <li>Select if documents needs to have an expiry date
+                    </li>
+                    <li>Click <strong>SAVE</strong> button</li>
+                </ol>
+                <div class="media p-2 col-10 offset-1">
+                    <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                        Employees will be able to add their documents in Self Service &gt; My Details &gt; Personal &gt; Edit
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
