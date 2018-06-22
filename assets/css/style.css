@@ -8,9 +8,10 @@ body {
 }
 
 
-/* a {
-color: #6ABD45;
-} */
+a {
+  /*color: #6ABD45;*/
+  transition: all 300ms ease;
+}
 
 p {
   margin: 12px 0;
@@ -452,13 +453,23 @@ body {
 
 #stickybar ul li a:hover,
 #stickybar ul li a.active {
-  color: #2a2a2a;
+  color: #e70d52;
 }
 
-.highlight {
+.media-body {
   border: 1px solid #f7eed2;
   border-radius: 4px;
   background: #fff8e3;
+}
+
+ul li strong,
+ol li strong {
+  background: #9e9e9e4a;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0px 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 ol.alpha {
@@ -515,9 +526,9 @@ ol li em {
   height: 40px;
   display: block;
   text-decoration: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
   display: none;
   z-index: 4;
   -webkit-transition: all 0.1s ease-in-out;
