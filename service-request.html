@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="userguideApp" ng-controller="indexCtrl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sentrifugo - User Guidance</title>
+    <!-- Stylesheets -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/simplebar.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- <base href="/"> -->
+</head>
+
+<body>
+    <div class="container white_box" id="userguideContainer">
+        <div class="p-4">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 mb-4"><img src="assets/images/sentrifugo_logo.png"></div>
+                <div class="col-md-6 offset-md-2 col-sm-12 mb-4">
+                    <div class="search_box"><i class="fas fa-search"></i>
+                        <input type="text" value="Search by Module, Action"> </div>
+                </div>
+            </div>
+            <ul class="main_menu mb-5 row no-gutters">
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="index.html" class="gap_div">
+                        <label>Introduction</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="getting-started.html" class="gap_div">
+                        <label>Getting
+                            <br>Started</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="dashboard.html" class="gap_div">
+                        <label>Dashboard</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="leave-management.html" class="gap_div">
+                        <label>Leave
+                            <br>Management</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="self-service.html" class="gap_div">
+                        <label>Self
+                            <br>Service</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="service-request.html" class="gap_div">
+                        <label>Service
+                            <br>Request</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="hr.html" class="gap_div">
+                        <label>HR</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="recruitments.html" class="gap_div">
+                        <label>Recruitments</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="background-check.html" class="gap_div">
+                        <label>Background
+                            <br>Check</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="organization.html" class="gap_div">
+                        <label>Organization</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="analytics.html" class="gap_div">
+                        <label>Analytics</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="site-config.html" class="gap_div">
+                        <label>Site Config</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="modules.html" class="gap_div">
+                        <label>Modules</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="logs.html" class="gap_div">
+                        <label>Logs</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="expenses.html" class="gap_div">
+                        <label>Expenses</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="assets.html" class="gap_div">
+                        <label>Assets</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="appraisals.html" class="gap_div">
+                        <label>Appraisals</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="disciplinary.html" class="gap_div">
+                        <label>Disciplinary</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="conference-bookings.html" class="gap_div">
+                        <label>Conference
+                            <br>Bookings</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="payslips.html" class="gap_div">
+                        <label>Payslips</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="exit-procedure.html" class="gap_div">
+                        <label>Exit
+                            <br>Procedure</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="time.html" class="gap_div">
+                        <label>Time</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="additional-features.html" class="gap_div">
+                        <label>Additional
+                            <br>Features</label>
+                    </a>
+                </li>
+            </ul>
+            <main>
+                <div class="row">
+                    <nav id="stickybar" class="col-xl-3 col-md-3" data-simplebar data-simplebar-auto-hide="true">
+                        <ul>
+                            <li><a href="#create-Service-Request-Categories">How do I create Service Request Categories?</a></li>
+                            <li><a href="#Service-Request-Types">How do I create Service Request Types?</a></li>
+                            <li><a href="#configure-Service-Request-settings1">How do I configure Service Request settings?</a></li>
+                            <li><a href="#Approvers-excu-view">Who are Approvers, Executors and Viewers?</a></li>
+                            <li><a href="#raise-a-Service-Request">How do I raise a Service Request?</a></li>
+                            <li><a href="#view-my-Service-Requests">How do I view my Service Requests?</a></li>
+                            <li><a href="#execute-a-Service-Request">How do I execute a Service Request?</a></li>
+                            <li><a href="#Service-Request-as-Management">How do I approve a Service Request as Management (Approver)/Manager?</a></li>
+                            <li><a href="#Service-Request-as-an-Executor">How do I close a Service Request as an Executor?</a></li>
+                        </ul>
+                    </nav>
+                    <div id="main" class="col-xl-9 col-md-9">
+                        <div class="overview">
+                            <h1>Service Request</h1>
+                            <p>Service Request provides access to key services and information which are required by the employees. Configure the service request workflow without coding or scripting. You can raise and handle service requests. Below is the service request process flowchart. </p>
+                            <p><img src="assets/images/service-request/1.jpg" class="img-fluid" width="1210" height="713" alt="" /></p>
+                            <p><strong>Description:</strong></p>
+                            <ul>
+                                <li>A User (Any User who has a reporting manager) raises a service request. </li>
+                                <li>The Executor(s), Viewer(s) and the User will receive an email notification. </li>
+                                <li>The Executor has 3 options: </li>
+                                <ul>
+                                    <li>He/she can execute and close the service request</li>
+                                    <li>Request for Management approval></li>
+                                    <li>Request for User’s manager’s approval</li>
+                                </ul>
+                                <li>The actual execution takes place offline</li>
+                                <li>If the Executor has requested for either User’s Reporting Manager or Management’s approval, then the request will only be closed once one/both of them have approved. The Reporting Manager or Management will receive an email notification if an approval is sought from them by the executor(s). </li>
+                            </ul>
+                            <div id="create-Service-Request-Categories">
+                                <h2>How do I create Service Request Categories?</h2>
+                                <p><img src="assets/images/service-request/2.jpg" class="img-fluid" width="1210" height="713" alt="" /></p>
+                                <ol class="alpha">
+                                    <li>Click <strong>Service Request</strong> in the top menu </li>
+                                    <li>Click <strong>Configuration</strong> on the left menu panel </li>
+                                    <li>Click <strong>Categories</strong> in the submenu </li>
+                                    <li>Click <strong>+Add</strong> button on the right side </li>
+                                </ol>
+                                <p><img src="assets/images/service-request/3.jpg" class="img-fluid" width="1210" height="713" alt="" /></p>
+                                <ol class="alpha" start="5">
+                                    <li>Enter the Required details </li>
+                                    <li>Click <strong>SAVE</strong> button </li>
+                                </ol>
+                            </div>
+                            <div id="Service-Request-Types">
+                                <h2>How do I create Service Request Types?</h2>
+                                <p><img src="assets/images/service-request/4.jpg" class="img-fluid" width="1210" height="713" alt="" /></p>
+                                <ol class="alpha">
+                                    <li>Click on the Service Request in the top menu </li>
+                                    <li>Click <strong>Configuration</strong> on the left side panel </li>
+                                    <li>Click <strong>Request Type </strong>submenu </li>
+                                    <li>Click <strong>+Add</strong> button on the right side </li>
+                                </ol>
+                                <p><img src="assets/images/service-request/5.jpg" class="img-fluid" width="1210" height="713" alt="" /></p>
+                                <ol class="alpha" start="5">
+                                    <li>Enter the Required details </li>
+                                    <li>Click <strong>ADD NEW REQUEST</strong> to add more requests in the same category </li>
+                                    <li>Click <strong>SAVE</strong> button </li>
+                                </ol>
+                            </div>
+                            <div id="configure-Service-Request-settings1">
+                                <h2>How do I configure Service Request settings?</h2>
+                                <p><img src="assets/images/service-request/6.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha">
+                                    <li>Click <strong>Service Request</strong> in the top menu </li>
+                                    <li>Click <strong>Configuration</strong> left menu panel </li>
+                                    <li>Click <strong>Settings</strong> in the submenu </li>
+                                    <li>Click <strong>+Add</strong> button on the right side </li>
+                                </ol>
+                                <p><img src="assets/images/service-request/7.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha" start="5">
+                                    <li>Enter the Required details </li>
+                                    <li>Click Click SAVE button button </li>
+                                </ol>
+                            </div>
+                            <div id="Approvers-excu-view">
+                                <h2>Who are Approvers, Executors and Viewers?</h2>
+                                <p><strong>Approvers:</strong> <span style="color: red"> *Management*</span>: They are responsible for providing approval for service requests. Executor(s) send a request for approval to the Approver(s). You can have a maximum of 3 approvers and a minimum of 1 approver. </p>
+                                <p><strong>Executors:</strong><span style="color: red">*All roles except Management*</span>: They are responsible for executing the service request. The actual execution takes place offline. You can have any number of executors.</p>
+                                <p><strong>Request Viewers:</strong><span style="color: red"> *All roles except Management*</span>: They don’t have any responsibility in the service request process. They can only view the actions taken by the executors and approvers via email notifications. You can have any number of viewers. </p>
+                            </div>
+                            <div id="raise-a-Service-Request">
+                                <h2>How do I raise a Service Request?</h2>
+                                <p><img src="assets/images/service-request/8.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha">
+                                    <li>Click <strong>Service Request </strong>in the top menu </li>
+                                    <li>Click <strong>My request summary</strong> on the left side panel </li>
+                                    <li>Click <strong>+Add</strong> button on the right side </li>
+                                </ol>
+                                <p><img src="assets/images/service-request/9.jpg" class="img-fluid" alt="" /></p>                        
+                                <ol class="alpha" start="4">
+                                    <li>Fill in the required details </li>
+                                    <li>Click <strong>SAVE</strong> button </li>
+                                </ol>
+                            </div>
+                            <div id="view-my-Service-Requests">
+                                <br>
+                                <h2>How do I view my Service Requests?</h2>
+                                <p><img src="assets/images/service-request/10.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha">
+                                    <li>Click <strong>Service Request</strong> in the top menu </li>
+                                    <li>Click <strong>My request summary</strong> on the left menu panel </li>
+                                </ol>
+                                <p>Service Requests have been categorized on basis of their statuses: </p>
+                                <ul>
+                                    <li>All</li>
+                                    <li>Open</li>
+                                    <li>Closed</li>
+                                    <li>Rejected</li>
+                                    <li>Cancelled</li>
+                                </ul>
+                                <ol class="alpha" start="3">
+                                    <li>Click on the category you would like to view. </li>
+                                    <li>Number of tickets present in each category </li>
+                                    <li>Click on any ticket record to view the details </li>
+                                </ol>
+                                <p><img src="assets/images/service-request/11.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha" start="6">
+                                    <li>You can view the service request history here </li>
+                                    <li>Click <strong>BACK</strong> to return to the service request grid </li>
+                                </ol>
+                            </div>
+                            <div id="execute-a-Service-Request">
+                                <h2>How do I execute a Service Request?</h2>
+                                <p>If you have been configured as the executor or one of the executors for a service request category, then you will receive an email when an employee raises a request (Provided the executor and employee belong to the same Business Unit). </p>
+                                <p><img src="assets/images/service-request/12.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha">
+                                    <li>Click <strong>Service Request</strong> in the top menu </li>
+                                    <li>Click<strong> My action summary</strong> on the left menu panel </li>
+                                    <li>Click Open in the submenu </li>
+                                    <li>Click on any ticket record to view the details </li>
+                                </ol>
+                                <div class="media p-2 col-10 offset-1"> <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight"> The actual execution takes place offline. </p>
+                                </div>
+                                <p><img src="assets/images/service-request/13.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha" start="5">
+                                    <li>Click <strong>Close reques</strong>t button to approve/reject the request. </li>
+                                </ol>
+                                <ul>
+                                    <li>(e1) Select an action (Approve/Reject) </li>
+                                    <li>(e2) Provide comments. </li>
+                                </ul>
+                                <ol class="alpha" start="6">
+                                    <li>Request Management Approval for the service request (They will be the approver(s) selected while configuring the Service Request Settings) </li>
+                                    <li>Request Manager Approval for the service request (The employee’s reporting manager) </li>
+                                    <li>Click <strong>SUBMIT</strong> button </li>
+                                </ol>
+                                <div class="media p-2 col-10 offset-1"> <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                                    <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight"> Requests can be closed at any point by the executor, except when Management/Manager approval is pending </p>
+                                </div>
+                            </div>
+                            <div id="Service-Request-as-Management">
+                                <h2>How do I approve a Service Request as Management (Approver)/Manager?</h2>
+                                <p><img src="assets/images/service-request/14.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha">
+                                    <li>Click <strong>Service Request</strong> in the top menu </li>
+                                    <li>Click <strong>My Action Summary</strong> on the left side panel </li>
+                                    <li>Click <strong>To approve</strong> in the submenu </li>
+                                    <li>Click on any ticket record to view the details </li>
+                                </ol>
+                                <p><img src="assets/images/service-request/15.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha" start="5">
+                                    <li>Select any action (Approve/Reject) </li>
+                                    <li>Provide comments </li>
+                                    <li>Click <strong>SUBMIT</strong> button </li>
+                                    <li>Click <strong>BACK</strong> button to return to the service request grid </li>
+                                </ol>
+                            </div>
+                            <div id="Service-Request-as-an-Executor">
+                                <h2>How do I close a Service Request as an Executor?</h2>
+                                <p>If you have requested for approval from either the Management (Approver)/Manager, you will receive an email notification when they take an action.</p>
+                                <p><img src="assets/images/service-request/16.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha">
+                                    <li>Click <strong>Service Request</strong> in the top menu</li>
+                                    <li>Click <strong>My action summary</strong> on the left menu panel</li>
+                                    <li>Click <strong>Pending</strong> in the submenu</li>
+                                    <li>Click on any ticket record to view the details</li>
+                                </ol>
+                                <p><img src="assets/images/service-request/17.jpg" class="img-fluid" alt="" /></p>
+                                <ol class="alpha" start="5">
+                                    <li>Select an action (Approve/Reject)</li>
+                                    <li>Provide comments.</li>
+                                    <li>Click <strong>SUBMIT</strong> button</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main> <a href="#" id="scrollup"><i class="fas fa-chevron-up"></i></a>
+            <div id="footer">...</div>
+        </div>
+    </div>
+    <!-- JavaScripts Libraries -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/simplebar.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

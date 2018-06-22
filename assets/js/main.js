@@ -22,67 +22,88 @@ $(document).ready(function() {
         $(this).addClass('select');
     });
 
-    SyntaxHighlighter.all();
-    $('#sidebar ul li a').not('#side-download-link').click(function(e) {
-        e.preventDefault();
-        $.scrollTo($(this).attr('href'), 500);
-        $('.active').removeClass('active');
-        //$(this).parent().addClass('active');
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
     });
-    var $sections = $('#main .scrolltrack'); // all content sections
-    var $navs = $('#sidebar > ul > li').not('#side-download-link'); // all nav sections
 
-    var topsArray = $sections.map(function() {
-        return $(this).position().top - 80; // make array of the tops of content
-    }).get(); //   sections, with some padding to
-    //   change the class a little sooner
-    var len = topsArray.length; // quantity of total sections
-    var currentIndex = 0; // current section selected
+    // Get current page URL
+    var url = window.location.href;
 
-    topsArray[len - 1] = topsArray[len - 1] - 210;
-    var getCurrent = function(top) { // take the current top position, and see which
-        for (var i = 0; i <= len; i++) { // index should be displayed
-            if (top > topsArray[i] && topsArray[i + 1] && top < topsArray[i + 1]) {
-                return i;
-            }
-        }
-    };
-    //smoothscroll
+    // remove # from URL
+    url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
 
-});
+    // remove parameters from URL
+    url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
 
-// Select all links with hashes
-$('a[href*="#"]')
-// Remove links that don't actually link to anything
-.not('[href="#"]')
-.not('[href="#0"]')
-.click(function(event) {
-    // On-page links
-if (
-    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-    location.hostname == this.hostname
-) {
-    // Figure out element to scroll to
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    // Does a scroll target exist?
-    if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-                return false;
-            } else {
-                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                $target.focus(); // Set focus again
-            };
-        });
+    // select file name
+    url = url.substr(url.lastIndexOf("/") + 1);
+
+    // If file name not avilable
+    if (url == '') {
+        url = 'index.html';
     }
-}
+
+    // Loop all menu items
+    $('.main_menu li').each(function() {
+        // select href
+        var href = $(this).find('a').attr('href');
+        // Check filename
+        if (url === href) {
+            // Add active class
+            $(this).addClass('select');
+        }
+    });
+
+    $('a[href*=#]').bind('click', function(e) {
+        e.preventDefault(); // prevent hard jump, the default behavior
+
+        var target = $(this).attr("href"); // Set the target as variable
+
+        // perform animated scrolling by getting top-position of target-element and set it as scroll target
+        $('html, body').stop().animate({
+            scrollTop: $(target).offset().top
+        }, 600, function() {
+            location.hash = target; //attach the hash (#jumptarget) to the pageurl
+        });
+
+        return false;
+    });
 });
+
+$(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop();
+    // Show/hide menu on scroll
+    /*
+    if (scrollDistance >= 850) {
+    $('nav').fadeIn("fast");
+    } else {
+    $('nav').fadeOut("fast");
+    }
+    */
+    // Assign active class to nav links while scolling
+    $('h2').each(function(i) {
+        if ($(this).position().top <= scrollDistance) {
+            $('#stickybar li.active').removeClass('active');
+            $('#stickybar li').eq(i).addClass('active');
+        }
+    });
+}).scroll();

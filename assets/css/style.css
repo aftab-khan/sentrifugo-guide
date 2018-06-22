@@ -6,6 +6,11 @@ html,
 body {
   margin: 0;
 }
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
 
 
 a {
@@ -89,15 +94,32 @@ ul li ul li ul {
   padding: 20px 45px;
 }
 
+#main h1 {
+  font-size: 1.5rem;
+  color: rgb(76, 86, 87);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
 #main img {
   margin: 0 auto;
   display: block;
 }
+#main .img-fluid {
+  border: 1px solid rgba(204, 204, 204, 0.4);
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
 
 #main h2 {
-  font-size: 24px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    border-left: 2px solid #f44336;
 }
 
 #main p {
@@ -203,9 +225,7 @@ pre {
 }
 
 #main ul {
-  width: 550px;
-  line-height: 150%;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 #main ul li {
@@ -367,8 +387,8 @@ body {
   background: #fdf9e2;
 }
 
-.col_color a.select,
-.col_color a.select:hover {
+.col_color.select a,
+.col_color.select a:hover {
   background: #0069ff;
   color: #fff;
   cursor: pointer;
@@ -452,8 +472,9 @@ body {
 }
 
 #stickybar ul li a:hover,
-#stickybar ul li a.active {
-  color: #e70d52;
+#stickybar ul li a:focus,
+#stickybar ul li.active a {
+  color: #f44336;
 }
 
 .media-body {
@@ -462,8 +483,7 @@ body {
   background: #fff8e3;
 }
 
-ul li strong,
-ol li strong {
+ol.alpha li strong {
   background: #9e9e9e4a;
   display: inline-block;
   border-radius: 4px;
@@ -562,4 +582,10 @@ ol li em {
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
+}
+
+.main_menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

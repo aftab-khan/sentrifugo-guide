@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="userguideApp" ng-controller="indexCtrl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sentrifugo - User Guidance</title>
+    <!-- Stylesheets -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/simplebar.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- <base href="/"> -->
+</head>
+
+<body>
+    <div class="container white_box" id="userguideContainer">
+        <div class="p-4">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 mb-4"><img src="assets/images/sentrifugo_logo.png"></div>
+                <div class="col-md-6 offset-md-2 col-sm-12 mb-4">
+                    <div class="search_box"><i class="fas fa-search"></i>
+                        <input type="text" value="Search by Module, Action"> </div>
+                </div>
+            </div>
+            <ul class="main_menu mb-5 row no-gutters">
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="index.html" class="gap_div">
+                        <label>Introduction</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="getting-started.html" class="gap_div">
+                        <label>Getting
+                            <br>Started</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="dashboard.html" class="gap_div">
+                        <label>Dashboard</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="leave-management.html" class="gap_div">
+                        <label>Leave
+                            <br>Management</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="self-service.html" class="gap_div">
+                        <label>Self
+                            <br>Service</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="service-request.html" class="gap_div">
+                        <label>Service
+                            <br>Request</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="hr.html" class="gap_div">
+                        <label>HR</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="recruitments.html" class="gap_div">
+                        <label>Recruitments</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="background-check.html" class="gap_div">
+                        <label>Background
+                            <br>Check</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="organization.html" class="gap_div">
+                        <label>Organization</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="analytics.html" class="gap_div">
+                        <label>Analytics</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="site-config.html" class="gap_div">
+                        <label>Site Config</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="modules.html" class="gap_div">
+                        <label>Modules</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="logs.html" class="gap_div">
+                        <label>Logs</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="expenses.html" class="gap_div">
+                        <label>Expenses</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="assets.html" class="gap_div">
+                        <label>Assets</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="appraisals.html" class="gap_div">
+                        <label>Appraisals</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="disciplinary.html" class="gap_div">
+                        <label>Disciplinary</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="conference-bookings.html" class="gap_div">
+                        <label>Conference
+                            <br>Bookings</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="payslips.html" class="gap_div">
+                        <label>Payslips</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="exit-procedure.html" class="gap_div">
+                        <label>Exit
+                            <br>Procedure</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="time.html" class="gap_div">
+                        <label>Time</label>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-md-3 col-sm-4 col_color">
+                    <a href="additional-features.html" class="gap_div">
+                        <label>Additional
+                            <br>Features</label>
+                    </a>
+                </li>
+            </ul>
+            <main>
+                <div class="row">
+                    <nav id="stickybar" class="col-xl-3 col-md-3" data-simplebar data-simplebar-auto-hide="true">
+                        <ul>
+                            <li><a href="#Superadmin">What are the roles available in Sentrifugo? </a></li>
+                            <li><a href="#How_do_I_log_in_to_Sentrifugo">How do I log in to Sentrifugo?</a></li>
+                            <li><a href="#How_do_I_Setup_Sentrifugo">How do I Setup Sentrifugo?</a></li>
+                            <li><a href="#How_do_I_add_Employees_to_Sentrifugo">How do I add Employees to Sentrifugo?</a></li>
+                            <li><a href="#How_do_I_Edit_employee_details">How do I Edit employee details?</a></li>
+                            <li><a href="#How_do_Inactivate_an_employee">How do I Inactivate an employee?</a></li>
+                            <li><a href="#add-Business-Units-and-Departments">How do I add Business Units and Departments (without using configuration wizard)? </a></li>
+                            <li><a href="#How_do_I_add_Job_Titles_and_Positions">How do I add Job Titles and Positions? </a></li>
+                        </ul>
+                    </nav>
+                    <div id="main" class="col-xl-9 col-md-9">
+                        <h1>Getting Started</h1>
+                        <h2 id="Superadmin" class="mt-0">Super Admin</h2>
+                        <p>Super Admin installs the application and provides his email credentials while installing. He/she is responsible for setting up and configuring the application to make it ready for use. The Super Admin will be the first employee in the application, for example: EMP0001 or SENT0001. However in Sentrifugo, the Super Admin will not be included in the organization’s employees’ list. The employees’ list starts from the second employee (Organization Head). </p>
+                        <p>The Super Admin has unlimited access over the entire application. In other words, he/she has full control, and is responsible for administering Sentrifugo. </p>
+                        <h2>Default Role Groups in Sentrifugo</h2>
+                        <p>There are 6 main role groups available by default in Sentrifugo: </p>
+                        <ul>
+                            <li>Management</li>
+                            <li>Manager</li>
+                            <li>HR</li>
+                            <li>Employee</li>
+                            <li>System Admin</li>
+                            <li>External User</li>
+                        </ul>
+                        <p>Within each role group a maximum of 5 role groups can be created. For example: </p>
+                        <p><img src="assets/images/intro1.jpg" class="img-fluid"></p>
+                        <h2 id="How_do_I_log_in_to_Sentrifugo">Super Admin</h2>
+                        <p>After installing Sentrifugo your (Super Admin) credentials will be sent to your email address and will also be available in a downloadable PDF file. To access the application follow the link provided on the screen after installation.</p>
+                        <p><img src="assets/images/login.jpg" width="937" height="407" alt="" class="img-fluid"></p>
+                        <ul>
+                            <li>Super Admin login credentials</li>
+                            <li>Follow this link to open the application</li>
+                            <li>Download PDF file containing login credentials</li>
+                        </ul>
+                        <p>Super Admin receives the below email:</p>
+                        <p><img src="assets/images/login-cerd.jpg" width="714" height="1692" alt="" / class="img-fluid"></p>
+                        <h2>Employees/Users</h2>
+                        <p>After the HR/Management/Super Admin adds you to Sentrifugo, your credentials will be sent to your provided email address. You can access the application through the link provided in the email containing your credentials</p>
+                        <p><img src="assets/images/greetings.jpg" width="767" height="419" alt="" / class="img-fluid"></p>
+                        <p>The link leads you to the Sentrifugo login screen.</p>
+                        <p><img src="assets/images/login1.jpg" width="1226" height="851" alt="" / class="img-fluid"></p>
+                        <p id="How_do_I_Setup_Sentrifugo">The Super Admin can begin setting up Sentrifugo by using the Configuration Wizard.</p>
+                        <h2>Configuration Wizard</h2>
+                        <p>Configuration Wizard allows you to configure settings that reflect requirements unique to your organization and make your application ready to use. Configuration Wizard is the first screen that is displayed if you are logging into the application for the first time. </p>
+                        <p>Information is gathered in 5 steps.</p>
+                        <p><strong>Step 1:</strong> Modules</p>
+                        <p><img src="assets/images/modules-1.jpg" width="1226" height="872" alt="" / class="img-fluid"></p>
+                        <ul>
+                            <li>All the modules are displayed in a circular representation</li>
+                            <li>Click on a module icon to activate or inactivate a module </li>
+                            <li>Click SAVE button to apply the changes made </li>
+                            <li>Click Next button to proceed to the next step </li>
+                            <li>Click Configure Later and you will be redirected to the dashboard and you can complete the Configuration as per your convenience</li>
+                            <li>Click Back To Site button and you will be redirected to the dashboard. The next time you log in, it will resume from where you had discontinued earlier in the configuration wizard. </li>
+                        </ul>
+                        <p><strong>Step 2:</strong> Site Config</p>
+                        <p><img src="assets/images/modules-2.jpg" width="1195" height="833" alt="" / class="img-fluid"></p>
+                        <ul>
+                            <li>Make changes to the Site Configurations based on your organization preferences </li>
+                            <li>Click Add Time Zone to add the required time zone </li>
+                        </ul>
+                        <p>When you click Add time Zone another window will pop up which will let you select the time zone(s) you require in your organization. </p>
+                        <p><strong>Step 3 :</strong>Organization</p>
+                        <p><img src="assets/images/module-3.jpg" width="1210" height="1061" alt="" class="img-fluid"></p>
+                        <ul>
+                            <li>Click Add Country to add the required country </li>
+                            <li>Click Add State to add the required state </li>
+                            <li>Click Add City to add the required city </li>
+                            <li>Enter information about your organization </li>
+                        </ul>
+                        <p>After saving your organization’s details, an <strong>ADD Employee</strong> button will appear on the top right corner of the configuration wizard screen. However, it is not mandatory to add an employee in this step, you can even add an employee after the entire configuration is completed. </p>
+                        <p>If you want to add an employee please refer to section <a href="#"> 1.4 How do I add employees to Sentrifugo?</a> </p>
+                        <p><strong>Step 4 :</strong>Business Units</p>
+                        <p>You can create business units and departments here.</p>
+                        <p><img src="assets/images/module-4.jpg" width="1226" height="766" class="img-fluid" alt="" /></p>
+                        <ul>
+                            <li>Create a new business unit by giving its name and street address. </li>
+                            <li>Create a new department within the business unit </li>
+                            <li>Add another department (To have multiple departments under a business unit) </li>
+                            <li>Click here to add the first employee (organization head) </li>
+                        </ul>
+                        <p><strong>Step 5 :</strong>Service Request</p>
+                        <p><img src="assets/images/module-5.jpg" class="img-fluid" alt="" /></p>
+                        <ul>
+                            <li>Create a new service category </li>
+                            <li>Create a new request type </li>
+                            <li>Add another request type </li>
+                        </ul>
+                        <p>Click <strong>Back To site</strong> to go back to the application’s dashboard and exit the configuration wizard.</p>
+                        <div class="row">
+                            <div class="col-md-1"><img src="assets/images/notpad.jpg" class="img-fluid" alt="" /></div>
+                            <div class="col-md-10">
+                                <p>Ensure that yoy always <span class="badge badge-secondary"> SAVE </span> after entering details in each section of the Configuration Wizard and only then Proceed</p>
+                            </div>
+                        </div>
+                        <h2 id="How_do_I_add_Employees_to_Sentrifugo">Add Employees to Sentrifugo</h2>
+                        <p>Gathering management details is an important aspect of an organization. The first employee you add will be the Organization Head. </p>
+                        <div class="row">
+                            <div class="col-md-1"><img src="assets/images/notpad.jpg" class="img-fluid" alt="" /></div>
+                            <div class="col-md-10">
+                                <p>You can add other employees only after adding the Organization Head.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1"><img src="assets/images/notpad.jpg" class="img-fluid" alt="" /></div>
+                            <div class="col-md-10">
+                                <p>While adding employees ensure that they align with the hierarchy of your organization (top down approach). Reporting manager is a mandatory field, while adding employees.</p>
+                            </div>
+                        </div>
+                        <p><strong>Adding Organization Head (Employee #2)</strong></p>
+                        <p>On clicking <span class="badge badge-secondary"> ADD EMPLOYEE </span> in the configuration wizard screen the below screen will appear: </p>
+                        <p><img src="assets/images/module7.jpg" class="img-fluid" alt="" /></p>
+                        <p>(a) Enter the all the mandatory details</p>
+                        <p>(b) Click on Save button </p>
+                        <p>(c) Go back to the configuration wizard and resume configuring your application </p>
+                        <p><strong>Adding Other Employees</strong></p>
+                        <p><img src="assets/images/addemp.jpg" class="img-fluid" alt="" /></p>
+                        <p>(a) Click HR in the top menu </p>
+                        <p>(b) Click +Add button on the right side </p>
+                        <p><img src="assets/images/add.jpg" class="img-fluid" alt="" /></p>
+                        <p>(c) You will need to enter the Employee ID manually. </p>
+                        <p>(d) Enter the required details related to the employee </p>
+                        <p>(e) Click Save button to add the employee </p>
+                        <p> Only the Super Admin’s ID number will be fixed as 0001. All the other Employees including the Organization Head can have customized employee ID numbers. For example:</p>
+                        <p>Super Admin: EMP0001</p>
+                        <p> Organization Head:</p>
+                        <p> EMP0022 Manager:</p>
+                        <p><strong>Adding Employees in Bulk</strong></p>
+                        <p>Employees can be added in bulk using the import option. You have to download the import format excel doc, fill it in with all the employees' details and then import it.</p>
+                        <p><img src="assets/images/add-bulk.jpg" class="img-fluid" alt="" /></p>
+                        <p>(a) Click HR in the top menu</p>
+                        <p>(b) Click Import Format on the right side above the Employees grid to download the format </p>
+                        <p>(c) For further guidance, click on the Help link. You will be directed to the import guide, which will provide you detailed information on how to add employee in bulk</p>
+                        <p>Please refer to the below figure to view the Import Format</p>
+                        <p><img src="assets/images/xl.jpg" class="img-fluid" alt="" /></p>
+                        <p>In bulk import, emails containing the credentials will not be sent automatically to the employees. The employee data will only be saved in the database. In order to send emails, you will need to run the cron job:</p>
+                        <p>http://..(your domain name)../..(your application name)../index.php/cronjob</p>
+                        <p>For Example: http://example.com/sentrifugo/index.php/cronjob</p>
+                        <div class="row">
+                            <div class="col-md-1"><img src="assets/images/notpad.jpg" class="img-fluid" alt="" /></div>
+                            <div class="col-md-10">
+                                <p>Please logout of the application and then run the cron job in your browser.</p>
+                            </div>
+                        </div>
+                        <h4 id="How_do_I_Edit_employee_details">Edit Employee details</h4>
+                        <p>Employee details can be edited to make necessary changes by selecting the edit option available.</p>
+                        <p><img src="assets/images/ecit-emp.jpg" class="img-fluid" alt="" /></p>
+                        <p> (a) Click on the HR module in the top menu. A list of employees will be displayed by default. </p>
+                        <p> (b) Click on the dots shown for every individual employee. </p>
+                        <p> (c) Select Edit option to make changes to the employee details. </p>
+                        <p><img src="assets/images/details.jpg" class="img-fluid" width="1256" height="1273" alt="" /></p>
+                        <p>(d) Make required changes to the employee details and click “Update” to save your changes. </p>
+                        <h4 id="How_do_Inactivate_an_employee">How do Inactivate an employee</h4>
+                        <p>Navigate to the list of employees from the HR module and select EDIT option as described in the previous section. (Refer to 1.4.4)</p>
+                        <p><img src="assets/images/in-active.jpg" class="img-fluid" width="1284" height="367" alt="" /></p>
+                        <p> (a) Click on Inactivate button available below the employee picture. </p>
+                        <p>It will display a pop up window as shown below. </p>
+                        <p><img src="assets/images/emp-status.jpg" class="img-fluid" width="745" height="284" alt="" /></p>
+                        <p>(b) Enter the required details.</p>
+                        <p>(c) Click SAVE to confirm your actions. </p>
+                        <h4 id="add-Business-Units-and-Departments">Add Business Units and Departments (without using configuration wizard)?</h4>
+                        <p> Business Units and Departments are the two main organizational units of Sentrifugo. A Business Unit can have multiple departments and not vice versa. Below is an example of the Organization Structure in Sentrifugo. </p>
+                        <p><img src="assets/images/wizard.jpg" class="img-fluid" width="1451" height="493" alt="" /></p>
+                        <p><strong>Adding Business Units</strong></p>
+                        <p>(a) Click Organization in the top menu </p>
+                        <p>(b) Click on Business Units on the left panel </p>
+                        <p>(c) Click on +Add button on the right side. </p>
+                        <p><img src="assets/images/add-businees-unit.jpg" class="img-fluid" width="1218" height="493" alt="" /></p>
+                        <p>(d) Enter the necessary details </p>
+                        <p>(e) Click on Save button to save the Business Unit </p>
+                        <p><strong>Adding Departments </strong></p>
+                        <p><img src="assets/images/add-dept.jpg" class="img-fluid" width="1211" height="313" alt="" /></p>
+                        <p>(a)Click Organization in the top menu </p>
+                        <p>(b)Click on Departments on the left menu panel </p>
+                        <p>(c) Click on +Add button on the right side </p>
+                        <p><img src="assets/images/org.jpg" class="img-fluid" width="1209" height="570" alt="" /></p>
+                        <p>(d)Enter the necessary details </p>
+                        <p>(e)Click Save button to create a new department </p>
+                        <p><strong>No Business Unit </strong></p>
+                        <p> If you need only Departments and no Business Units, then you can go for the option ‘No Business Unit’. While creating a Department (refer 1.5.2 Adding Departments) select the option ‘No Business Unit’ in the Business Unit field. </p>
+                        <p><img src="assets/images/busineess-unit.jpg" class="img-fluid" width="431" height="493" alt="" /></p>
+                        <p><img src="assets/images/busineess-unit1.jpg" class="img-fluid" width="1210" height="568" alt="" /></p>
+                        <p>(a) Select the option ‘No Business Unit</p>
+                        <h4 id="How_do_I_add_Job_Titles_and_Positions">Add Job Titles and Positions</h4>
+                        <p>Job title is an employee’s designation and Position is the designation level. For example if the Job title is Software Engineer, then the Position can be Senior Software Engineer or Associate Software Engineer. </p>
+                        <p><img src="assets/images/job-positions.jpg" class="img-fluid" width="1205" height="419" alt="" /></p>
+                        <p><strong> Adding Job Titles</strong></p>
+                        <p>(a) Click HR in the top menu</p>
+                        <p>(b) Click Employee Configuration, it will expand to give more menu items</p>
+                        <p>(c) Click Positions in the submenu</p>
+                        <p>(d) Click +Add button on the right side</p>
+                        <p><img src="assets/images/add-posi.jpg" class="img-fluid" width="1211" height="418" alt="" /></p>
+                        <p>(e) Fill in the required details </p>
+                        <p>(f) Click Add Pay Frequency to add different frequency categories like Monthly, Daily etc. </p>
+                        <p>(g) Click Save button to create a new job title</p>
+                        <p><strong>Adding Positions</strong></p>
+                        <p><img src="assets/images/add-positions.jpg" class="img-fluid" width="1213" height="450" alt="" /></p>
+                        <p>(a) Click HR in the top menu</p>
+                        <p>(b) Click Employee Configuration, it will expand to give more menu items</p>
+                        <p>(c) Click Positions in the submenu</p>
+                        <p>(d) Click +Add button on the right side</p>
+                        <p><img src="assets/images/add-positions1.jpg" class="img-fluid" width="1213" height="450" alt="" /></p>
+                        <p>(e) Fill in the required details</p>
+                        <p>(f) Click SAVE to successfully create a position.</p>
+                        <div class="row">
+                            <div class="col-md-1"><img src="assets/images/notpad.jpg" class="img-fluid" alt=""></div>
+                            <div class="col-md-10">
+                                <p>You can create a Position only after creating a Job Title</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main> <a href="#" id="scrollup"><i class="fas fa-chevron-up"></i></a>
+            <div id="footer">...</div>
+        </div>
+    </div>
+    <!-- JavaScripts Libraries -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/simplebar.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
