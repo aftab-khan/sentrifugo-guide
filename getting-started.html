@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="userguideApp" ng-controller="indexCtrl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -184,11 +184,12 @@
                         <h2 id="How_do_I_log_in_to_Sentrifugo">Super Admin</h2>
                         <p>After installing Sentrifugo your (Super Admin) credentials will be sent to your email address and will also be available in a downloadable PDF file. To access the application follow the link provided on the screen after installation.</p>
                         <p><img src="assets/images/login.jpg" width="937" height="407" alt="" class="img-fluid"></p>
-                        <ul>
+                       
+<ol class="alpha">
                             <li>Super Admin login credentials</li>
                             <li>Follow this link to open the application</li>
                             <li>Download PDF file containing login credentials</li>
-                        </ul>
+                        </0l>
                         <p>Super Admin receives the below email:</p>
                         <p><img src="assets/images/login-cerd.jpg" width="714" height="1692" alt="" / class="img-fluid"></p>
                         <h2>Employees/Users</h2>
@@ -196,73 +197,87 @@
                         <p><img src="assets/images/greetings.jpg" width="767" height="419" alt="" / class="img-fluid"></p>
                         <p>The link leads you to the Sentrifugo login screen.</p>
                         <p><img src="assets/images/login1.jpg" width="1226" height="851" alt="" / class="img-fluid"></p>
-                        <p id="How_do_I_Setup_Sentrifugo">The Super Admin can begin setting up Sentrifugo by using the Configuration Wizard.</p>
+                         <div class="media p-2 col-10 offset-1">
+                            <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                            <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                                You can log in using your employee ID or your registered email
+address.
+                            </p>
+                        </div>
+                                                <h2 id="How_do_I_Setup_Sentrifugo">How do I set up Sentrifugo?</h2>
+                                                <p >The Super Admin can begin setting up Sentrifugo by using the Configuration Wizard.</p>
+
                         <h2>Configuration Wizard</h2>
                         <p>Configuration Wizard allows you to configure settings that reflect requirements unique to your organization and make your application ready to use. Configuration Wizard is the first screen that is displayed if you are logging into the application for the first time. </p>
                         <p>Information is gathered in 5 steps.</p>
                         <p><strong>Step 1:</strong> Modules</p>
                         <p><img src="assets/images/modules-1.jpg" width="1226" height="872" alt="" / class="img-fluid"></p>
-                        <ul>
+                        <ol class="alpha">
                             <li>All the modules are displayed in a circular representation</li>
                             <li>Click on a module icon to activate or inactivate a module </li>
                             <li>Click SAVE button to apply the changes made </li>
                             <li>Click Next button to proceed to the next step </li>
                             <li>Click Configure Later and you will be redirected to the dashboard and you can complete the Configuration as per your convenience</li>
                             <li>Click Back To Site button and you will be redirected to the dashboard. The next time you log in, it will resume from where you had discontinued earlier in the configuration wizard. </li>
-                        </ul>
+                        
                         <p><strong>Step 2:</strong> Site Config</p>
                         <p><img src="assets/images/modules-2.jpg" width="1195" height="833" alt="" / class="img-fluid"></p>
-                        <ul>
+                        
                             <li>Make changes to the Site Configurations based on your organization preferences </li>
                             <li>Click Add Time Zone to add the required time zone </li>
-                        </ul>
+						
                         <p>When you click Add time Zone another window will pop up which will let you select the time zone(s) you require in your organization. </p>
                         <p><strong>Step 3 :</strong>Organization</p>
                         <p><img src="assets/images/module-3.jpg" width="1210" height="1061" alt="" class="img-fluid"></p>
-                        <ul>
+                      
                             <li>Click Add Country to add the required country </li>
                             <li>Click Add State to add the required state </li>
                             <li>Click Add City to add the required city </li>
                             <li>Enter information about your organization </li>
-                        </ul>
+                        
                         <p>After saving your organization’s details, an <strong>ADD Employee</strong> button will appear on the top right corner of the configuration wizard screen. However, it is not mandatory to add an employee in this step, you can even add an employee after the entire configuration is completed. </p>
                         <p>If you want to add an employee please refer to section <a href="#"> 1.4 How do I add employees to Sentrifugo?</a> </p>
                         <p><strong>Step 4 :</strong>Business Units</p>
+                        <p><strong>Step 4 :</strong>Business Units</p>
                         <p>You can create business units and departments here.</p>
                         <p><img src="assets/images/module-4.jpg" width="1226" height="766" class="img-fluid" alt="" /></p>
-                        <ul>
+                        
                             <li>Create a new business unit by giving its name and street address. </li>
                             <li>Create a new department within the business unit </li>
                             <li>Add another department (To have multiple departments under a business unit) </li>
                             <li>Click here to add the first employee (organization head) </li>
-                        </ul>
+                      
                         <p><strong>Step 5 :</strong>Service Request</p>
                         <p><img src="assets/images/module-5.jpg" class="img-fluid" alt="" /></p>
-                        <ul>
+                        
                             <li>Create a new service category </li>
                             <li>Create a new request type </li>
                             <li>Add another request type </li>
-                        </ul>
+                        </0l>
                         <p>Click <strong>Back To site</strong> to go back to the application’s dashboard and exit the configuration wizard.</p>
-                        <div class="row">
-                            <div class="col-md-1"><img src="assets/images/notpad.jpg" class="img-fluid" alt="" /></div>
-                            <div class="col-md-10">
-                                <p>Ensure that yoy always <span class="badge badge-secondary"> SAVE </span> after entering details in each section of the Configuration Wizard and only then Proceed</p>
-                            </div>
+                       <div class="media p-2 col-10 offset-1">
+                            <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                            <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                                Ensure that yoy always SAVE after entering details in each section of the Configuration Wizard and only then Proceed
+                            </p>
                         </div>
                         <h2 id="How_do_I_add_Employees_to_Sentrifugo">Add Employees to Sentrifugo</h2>
                         <p>Gathering management details is an important aspect of an organization. The first employee you add will be the Organization Head. </p>
-                        <div class="row">
-                            <div class="col-md-1"><img src="assets/images/notpad.jpg" class="img-fluid" alt="" /></div>
-                            <div class="col-md-10">
-                                <p>You can add other employees only after adding the Organization Head.</p>
-                            </div>
+                       
+                        <div class="media p-2 col-10 offset-1">
+                            <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                            <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                                You can add other employees only after adding the Organization Head.
+                            </p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-1"><img src="assets/images/notpad.jpg" class="img-fluid" alt="" /></div>
-                            <div class="col-md-10">
-                                <p>While adding employees ensure that they align with the hierarchy of your organization (top down approach). Reporting manager is a mandatory field, while adding employees.</p>
-                            </div>
+                        <div class="media p-2 col-10 offset-1">
+                            <img src="assets/images/notpad.jpg" alt="" class="mr-3">
+                            <p class="media-body text-center pt-1 pb-1 pl-2 pr-2 m-0 highlight">
+                                While adding employees ensure that they align with the hierarchy
+of your organization (top down approach). Reporting manager is a
+
+mandatory field, while adding employees.
+                            </p>
                         </div>
                         <p><strong>Adding Organization Head (Employee #2)</strong></p>
                         <p>On clicking <span class="badge badge-secondary"> ADD EMPLOYEE </span> in the configuration wizard screen the below screen will appear: </p>
