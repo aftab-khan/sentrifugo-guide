@@ -110,6 +110,7 @@ ul li ul li ul {
   padding: 4px;
   border-radius: 4px;
   transition: all 0.2s ease;
+  cursor: zoom-in;
 }
 
 #main h2 {
@@ -540,8 +541,8 @@ ol li em {
   position: fixed;
   bottom: 20px;
   right: 40px;
-  background: #111;
-  background: rgba(0, 0, 0, 0.4);
+  background: #ffe400;
+  background: rgba(255, 228, 0);
   width: 40px;
   height: 40px;
   display: block;
@@ -557,7 +558,7 @@ ol li em {
 }
 
 #scrollup i {
-  color: #fff;
+  color: #000;
   margin: 0;
   position: relative;
   left: 13px;
@@ -573,11 +574,11 @@ ol li em {
 }
 
 #scrollup:hover {
-  background: #111;
+  background: #00ccff;
 }
 
 #scrollup:hover i {
-  color: #fff;
+  color: #000;
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
@@ -588,4 +589,58 @@ ol li em {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+.enlargeImageModalSource {
+  padding: 4px;
+  background: #fff;
+}
+.modal-backdrop.show {
+  opacity: 0.9;
+  background: #253f51;
+}
+#enlargeImageModal .modal-content {
+  background-color: transparent;
+  border: none;  
+}
+#enlargeImageModal .modal-header {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+#enlargeImageModal .modal-header .close {
+  font-size: 2rem;
+  opacity: 1;
+  padding: 0 .5rem;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 35px;
+  font-weight: 400;
+  margin: 0 0 0 auto;
+  background: url('../images/icon-close.svg') center center no-repeat;
+  position: relative;
+  z-index: 9;
+  border-radius: 50px;
+  right: -18px;
+  top: 10px;
+}
+#enlargeImageModal .modal-header .close:hover, 
+#enlargeImageModal .modal-header .close:focus {
+  text-decoration: none;
+  opacity: 1;
+}
+#enlargeImageModal .modal-body {
+  padding: 0;
+  box-shadow: 0 7px 30px 5px rgba(0, 0, 0 , 0.4)
+}
+
+#mainmenuLoad {
+  min-height: 288px;
+  margin-bottom: 3rem !important;
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 960px;
+  }
 }
